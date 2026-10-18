@@ -1,0 +1,85 @@
+{
+  "status": "FAIL",
+  "checks": [
+    {
+      "name": "dependencies",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "frontend-unit",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "frontend-build",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "backend-h2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "database-prepare",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "backend-mysql",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "backend-package",
+      "status": "FAIL",
+      "detail": ""
+    },
+    {
+      "name": "browser",
+      "status": "NOT RUN",
+      "detail": ""
+    },
+    {
+      "name": "workbook",
+      "status": "NOT RUN",
+      "detail": ""
+    },
+    {
+      "name": "backend-restart",
+      "status": "NOT RUN",
+      "detail": ""
+    },
+    {
+      "name": "orchestration",
+      "status": "FAIL",
+      "detail": "Build failed; browser testing cannot proceed."
+    },
+    {
+      "name": "backend-h2 results",
+      "status": "PASS",
+      "detail": "{'tests': 51, 'failures': 0, 'errors': 0, 'skipped': 0}"
+    },
+    {
+      "name": "backend-mysql results",
+      "status": "PASS",
+      "detail": "{'tests': 51, 'failures': 0, 'errors': 0, 'skipped': 0}"
+    },
+    {
+      "name": "frontend-unit results",
+      "status": "PASS",
+      "detail": "19/19 passed"
+    },
+    {
+      "name": "browser results",
+      "status": "NOT RUN",
+      "detail": "[Errno 2] No such file or directory: 'D:\\\\agent_learning\\\\Agricultural treade\\\\docs\\\\regression-runs\\\\20261018-114922-552cd3\\\\browser-results.json'"
+    }
+  ],
+  "manual": {
+    "android": "NOT VERIFIED",
+    "device_certificate_trust": "NOT VERIFIED",
+    "physical_printing": "NOT VERIFIED"
+  }
+}

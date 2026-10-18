@@ -1,0 +1,1818 @@
+{
+  "config": {
+    "argv": [
+      "D:\\node\\node.exe",
+      "D:\\agent_learning\\Agricultural treade\\frontend\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config",
+      "playwright.regression.config.ts"
+    ],
+    "configFile": "D:\\agent_learning\\Agricultural treade\\frontend\\playwright.regression.config.ts",
+    "rootDir": "D:/agent_learning/Agricultural treade/frontend/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": true,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/agent_learning/Agricultural treade/docs/regression-runs/20261018-121306-3c677e/browser-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "D:/agent_learning/Agricultural treade/frontend/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "D:\\agent_learning\\Agricultural treade\\docs\\regression-runs\\20261018-121306-3c677e\\browser-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "D:\\agent_learning\\Agricultural treade\\frontend\\e2e",
+        "snapshotDir": "D:\\agent_learning\\Agricultural treade\\frontend\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4182",
+          "channel": "chrome",
+          "headless": true,
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "timezoneId": "Asia/Singapore"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "D:\\agent_learning\\Agricultural treade\\docs\\regression-runs\\20261018-121306-3c677e\\browser-results.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "D:\\agent_learning\\Agricultural treade\\docs\\regression-runs\\20261018-121306-3c677e\\browser-report",
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": {
+      "command": "node node_modules/vite/bin/vite.js preview --config vite.acceptance.config.ts --host 127.0.0.1 --port 4182",
+      "url": "http://127.0.0.1:4182/api/health",
+      "reuseExistingServer": false,
+      "timeout": 60000
+    }
+  },
+  "suites": [
+    {
+      "title": "acceptance-api.spec.ts",
+      "file": "acceptance-api.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "API-01 冒烟、未登录、错误登录、记录员越权和非法月份",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 628,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:15:25.807Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a8fc35137c618e7152e3-f7c84ae699a97534cbe3",
+          "file": "acceptance-api.spec.ts",
+          "line": 27,
+          "column": 1
+        },
+        {
+          "title": "API-02 工人新增、修改、重复工号、停用拦截",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 956,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:15:26.479Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a8fc35137c618e7152e3-10aee344db536384871e",
+          "file": "acceptance-api.spec.ts",
+          "line": 38,
+          "column": 1
+        },
+        {
+          "title": "API-03 账号创建、角色调整、停用撤销已登录权限、自我保护",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 374,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:15:27.441Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a8fc35137c618e7152e3-2d0e6d640d7e00ecedf0",
+          "file": "acceptance-api.spec.ts",
+          "line": 48,
+          "column": 1
+        },
+        {
+          "title": "API-04 类别产品配置及公斤、斤、克计价和停用校验",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 302,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:15:27.822Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a8fc35137c618e7152e3-feb133314ab41139d8a7",
+          "file": "acceptance-api.spec.ts",
+          "line": 63,
+          "column": 1
+        },
+        {
+          "title": "API-05 数量、未来日期、补录说明、UUID、空批次及超大批次校验",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 265,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:15:28.135Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a8fc35137c618e7152e3-46ac928525b7d60ce890",
+          "file": "acceptance-api.spec.ts",
+          "line": 81,
+          "column": 1
+        },
+        {
+          "title": "API-06 同UUID重试、内容绑定、跨账号防复用和混合批次隔离",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 749,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:15:28.417Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a8fc35137c618e7152e3-bb31521adcc54f48d9f5",
+          "file": "acceptance-api.spec.ts",
+          "line": 89,
+          "column": 1
+        },
+        {
+          "title": "API-07 修改、逻辑删除、恢复与完整前后值审计",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 631,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:15:29.176Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a8fc35137c618e7152e3-d67b00637a88b5abf1ab",
+          "file": "acceptance-api.spec.ts",
+          "line": 106,
+          "column": 1
+        },
+        {
+          "title": "API-08 并发重放及相同业务键只能入账一次",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 339,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:15:29.817Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a8fc35137c618e7152e3-594b5804435d9afdb7f5",
+          "file": "acceptance-api.spec.ts",
+          "line": 124,
+          "column": 1
+        },
+        {
+          "title": "API-09 月度汇总、结算、晚传补结算、分次付款和真实Excel文件",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1398,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:15:30.166Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a8fc35137c618e7152e3-1af948667ca30db9e093",
+          "file": "acceptance-api.spec.ts",
+          "line": 134,
+          "column": 1
+        },
+        {
+          "title": "API-10 计费规则必填字段缺失应返回400，不能产生服务端500",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 177,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:15:31.579Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "invalid-rule-responses",
+                      "contentType": "application/json",
+                      "body": "WwogIHsKICAgICJuYW1lIjogIue8uuWwkeaooeW8jyIsCiAgICAicGF0aCI6ICIvYXBpL3J1bGVzL3RyaWFsIiwKICAgICJzdGF0dXMiOiA0MDAsCiAgICAiYm9keSI6IHsKICAgICAgIm1lc3NhZ2UiOiAi6K+36YCJ5oup5pyJ5pWI55qE6K6h6LS55qih5byPIiwKICAgICAgImRldGFpbHMiOiBudWxsCiAgICB9CiAgfSwKICB7CiAgICAibmFtZSI6ICLnvLrlsJHmqKHlvI8iLAogICAgInBhdGgiOiAiL2FwaS9ydWxlcyIsCiAgICAic3RhdHVzIjogNDAwLAogICAgImJvZHkiOiB7CiAgICAgICJtZXNzYWdlIjogIuivt+mAieaLqeacieaViOeahOiuoei0ueaooeW8jyIsCiAgICAgICJkZXRhaWxzIjogbnVsbAogICAgfQogIH0sCiAgewogICAgIm5hbWUiOiAi56m66Zi25q61IiwKICAgICJwYXRoIjogIi9hcGkvcnVsZXMvdHJpYWwiLAogICAgInN0YXR1cyI6IDQwMCwKICAgICJib2R5IjogewogICAgICAibWVzc2FnZSI6ICLorqHotLnpmLbmrrXkuI3og73kuLrnqboiLAogICAgICAiZGV0YWlscyI6IG51bGwKICAgIH0KICB9LAogIHsKICAgICJuYW1lIjogIuepuumYtuautSIsCiAgICAicGF0aCI6ICIvYXBpL3J1bGVzIiwKICAgICJzdGF0dXMiOiA0MDAsCiAgICAiYm9keSI6IHsKICAgICAgIm1lc3NhZ2UiOiAi6K6h6LS56Zi25q615LiN6IO95Li656m6IiwKICAgICAgImRldGFpbHMiOiBudWxsCiAgICB9CiAgfSwKICB7CiAgICAibmFtZSI6ICLnvLrlsJHpmLbmrrXnsbvlnosiLAogICAgInBhdGgiOiAiL2FwaS9ydWxlcy90cmlhbCIsCiAgICAic3RhdHVzIjogNDAwLAogICAgImJvZHkiOiB7CiAgICAgICJtZXNzYWdlIjogIuivt+mAieaLqeiuoeS7tuaIluiuoemHjeexu+WeiyIsCiAgICAgICJkZXRhaWxzIjogbnVsbAogICAgfQogIH0sCiAgewogICAgIm5hbWUiOiAi57y65bCR6Zi25q6157G75Z6LIiwKICAgICJwYXRoIjogIi9hcGkvcnVsZXMiLAogICAgInN0YXR1cyI6IDQwMCwKICAgICJib2R5IjogewogICAgICAibWVzc2FnZSI6ICLor7fpgInmi6norqHku7bmiJborqHph43nsbvlnosiLAogICAgICAiZGV0YWlscyI6IG51bGwKICAgIH0KICB9Cl0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a8fc35137c618e7152e3-f240d00d731d49b28fd0",
+          "file": "acceptance-api.spec.ts",
+          "line": 161,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "acceptance-network.spec.ts",
+      "file": "acceptance-network.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "NET-01 浏览器仍在线但API连接中断，原操作持久化后自动重试",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2221,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:15:31.787Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "9260c02f2177d4d44a2b-ee41cf1aa08ede73e568",
+          "file": "acceptance-network.spec.ts",
+          "line": 34,
+          "column": 1
+        },
+        {
+          "title": "NET-02 服务端已入账但响应丢失，原UUID补传仅产生一次工资和审计",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1670,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:15:34.718Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "9260c02f2177d4d44a2b-a3f90ea36d8e3d124504",
+          "file": "acceptance-network.spec.ts",
+          "line": 53,
+          "column": 1
+        },
+        {
+          "title": "NET-03 真断网后关闭页面并重开，IndexedDB与离线页面保留且恢复自动上传",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2166,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:15:36.405Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "9260c02f2177d4d44a2b-0c8d0e2424076fca4abf",
+          "file": "acceptance-network.spec.ts",
+          "line": 76,
+          "column": 1
+        },
+        {
+          "title": "SYS-01 手机手工重量录入与后台账本联通、统计切换和页面错误检查",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1870,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:15:38.584Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "9260c02f2177d4d44a2b-bcd3663752f91a9469d5",
+          "file": "acceptance-network.spec.ts",
+          "line": 96,
+          "column": 1
+        },
+        {
+          "title": "NET-04 503 后记录保留、连接恢复按原操作自动同步",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 16623,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:15:40.470Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "9260c02f2177d4d44a2b-e9e2e3875874db533206",
+          "file": "acceptance-network.spec.ts",
+          "line": 120,
+          "column": 3
+        },
+        {
+          "title": "NET-04 timeout 后记录保留、连接恢复按原操作自动同步",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 16633,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:15:57.120Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "9260c02f2177d4d44a2b-c6f986fa992018082e96",
+          "file": "acceptance-network.spec.ts",
+          "line": 120,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "confirmed-changes.spec.ts",
+      "file": "confirmed-changes.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "记录员更正、老板直接补付及历史快照保护 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8109,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:16:13.817Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e9749060a70cd9e9c907-b40b51bf50a6d6d878c8",
+          "file": "confirmed-changes.spec.ts",
+          "line": 20,
+          "column": 31
+        },
+        {
+          "title": "记录员更正、老板直接补付及历史快照保护 390px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9754,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:16:21.940Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e9749060a70cd9e9c907-8a85551d93139cdeaed7",
+          "file": "confirmed-changes.spec.ts",
+          "line": 20,
+          "column": 31
+        },
+        {
+          "title": "修改规则可直接发布，记录员维护并选择毛重筐重，净重只读",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4318,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:16:31.712Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e9749060a70cd9e9c907-1ffdf148f6633f8a2297",
+          "file": "confirmed-changes.spec.ts",
+          "line": 50,
+          "column": 1
+        },
+        {
+          "title": "更正归属只移动所选组成，查询分页可切换和过滤",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6228,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:16:36.043Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e9749060a70cd9e9c907-c28b4837b8e826e04802",
+          "file": "confirmed-changes.spec.ts",
+          "line": 64,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "deletion.spec.ts",
+      "file": "deletion.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "1440px accepted 在线直提与结算删除权限",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4788,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:16:42.310Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5e41bb235fd50df9e5ba-c444480c708dd35406bc",
+          "file": "deletion.spec.ts",
+          "line": 6,
+          "column": 3
+        },
+        {
+          "title": "1440px rejected 在线直提与结算删除权限",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1035,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:16:47.110Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5e41bb235fd50df9e5ba-e577f4de1e5040945fe2",
+          "file": "deletion.spec.ts",
+          "line": 6,
+          "column": 3
+        },
+        {
+          "title": "1440px unreachable 在线直提与结算删除权限",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1091,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:16:48.161Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5e41bb235fd50df9e5ba-b87d00349e6fd5afffd4",
+          "file": "deletion.spec.ts",
+          "line": 6,
+          "column": 3
+        },
+        {
+          "title": "1440px conflict 在线直提与结算删除权限",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1133,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:16:49.272Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5e41bb235fd50df9e5ba-218b6133f43736b3b5f4",
+          "file": "deletion.spec.ts",
+          "line": 6,
+          "column": 3
+        },
+        {
+          "title": "1440px offline 在线直提与结算删除权限",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 919,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:16:50.427Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5e41bb235fd50df9e5ba-f241fbaaedddcd1cb950",
+          "file": "deletion.spec.ts",
+          "line": 6,
+          "column": 3
+        },
+        {
+          "title": "390px accepted 在线直提与结算删除权限",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4747,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:16:51.362Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5e41bb235fd50df9e5ba-c27d5b21721304a36725",
+          "file": "deletion.spec.ts",
+          "line": 6,
+          "column": 3
+        },
+        {
+          "title": "390px rejected 在线直提与结算删除权限",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1003,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:16:56.126Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5e41bb235fd50df9e5ba-38452a0a9213a1e1d41a",
+          "file": "deletion.spec.ts",
+          "line": 6,
+          "column": 3
+        },
+        {
+          "title": "390px unreachable 在线直提与结算删除权限",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1024,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:16:57.150Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5e41bb235fd50df9e5ba-b293e273f21be14686cb",
+          "file": "deletion.spec.ts",
+          "line": 6,
+          "column": 3
+        },
+        {
+          "title": "390px conflict 在线直提与结算删除权限",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1115,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:16:58.203Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5e41bb235fd50df9e5ba-ed9824931afdef0088bb",
+          "file": "deletion.spec.ts",
+          "line": 6,
+          "column": 3
+        },
+        {
+          "title": "390px offline 在线直提与结算删除权限",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 885,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:16:59.338Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5e41bb235fd50df9e5ba-c6c0a0d1d6ed7ef0bf5c",
+          "file": "deletion.spec.ts",
+          "line": 6,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "entry-feedback.spec.ts",
+      "file": "entry-feedback.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "记录员在 1440px 采摘账本新增及操作反馈，顶部提示自动消失",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8849,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:17:00.257Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4c157b35e4176334534-d823c688befeb7753b58",
+          "file": "entry-feedback.spec.ts",
+          "line": 7,
+          "column": 3
+        },
+        {
+          "title": "记录员在 390px 采摘账本新增及操作反馈，顶部提示自动消失",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8901,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:17:09.120Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4c157b35e4176334534-085bce93b6592ab42c9e",
+          "file": "entry-feedback.spec.ts",
+          "line": 7,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "feature-expansion.spec.ts",
+      "file": "feature-expansion.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "地块、导入和打印快照完整流程 1440px",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 9696,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('dialog', { name: '历史打印快照' })\nExpected substring: \u001b[32m\"20公斤\"\u001b[39m\nReceived string:    \u001b[31m\"旧打印版本与当前账目关闭每日采摘核对表 · 2026-10-18 · 2026-10-18T12:16:42.130585100 · 农场老板旧表保持生成时的原样。当前数据仅用于对比；打印请返回当前每日核对表。查询关键字查询重置工人旧版工作量 / 地块当前工作量 / 地块旧版工资 → 当前工资分页工人-9b8bba-13PAGING-9b8bba-13新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-15PAGING-9b8bba-15新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-5PAGING-9b8bba-05新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-20PAGING-9b8bba-20新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-19PAGING-9b8bba-19新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-0PAGING-9b8bba-00新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-8PAGING-9b8bba-08新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-3PAGING-9b8bba-03新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-7PAGING-9b8bba-07新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-21PAGING-9b8bba-21新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-6PAGING-9b8bba-06新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-16PAGING-9b8bba-16新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-4PAGING-9b8bba-04新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-1PAGING-9b8bba-01新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-11PAGING-9b8bba-11新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-14PAGING-9b8bba-14新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-17PAGING-9b8bba-17新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-10PAGING-9b8bba-10新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-12PAGING-9b8bba-12新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-18PAGING-9b8bba-18新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00共 22 条 · 第 1 / 2 页每页10条20条50条上一页下一页生成时的原表每日采摘核对表2026-10-18 · 2026-10-18T12:16:42.130585100查询关键字查询重置工号姓名各班组采摘量上午工作量下午工作量上午工资（元）下午工资（元）当天工资（元）工人签字PAGING-9b8bba-13分页工人-9b8bba-13上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-15分页工人-9b8bba-15上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-05分页工人-9b8bba-5上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-20分页工人-9b8bba-20上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-19分页工人-9b8bba-19上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-00分页工人-9b8bba-0上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-08分页工人-9b8bba-8上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-03分页工人-9b8bba-3上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-07分页工人-9b8bba-7上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-21分页工人-9b8bba-21上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-06分页工人-9b8bba-6上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-16分页工人-9b8bba-16上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-04分页工人-9b8bba-4上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-01分页工人-9b8bba-1上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-11分页工人-9b8bba-11上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-14分页工人-9b8bba-14上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-17分页工人-9b8bba-17上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-10分页工人-9b8bba-10上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-12分页工人-9b8bba-12上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-18分页工人-9b8bba-18上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00共 22 条 · 第 1 / 2 页每页10条20条50条上一页下一页相关修改经过查询关键字查询重置没有符合查询条件的数据。共 0 条 · 第 1 / 1 页每页10条20条50条上一页下一页没有后续相关修改记录。\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" getByRole('dialog', { name: '历史打印快照' }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog', { name: '历史打印快照' })\u001b[22m\n\u001b[2m    8 × locator resolved to <section role=\"dialog\" aria-modal=\"true\" aria-label=\"历史打印快照\" class=\"modal wide-modal\">…</section>\u001b[22m\n\u001b[2m      - unexpected value \"旧打印版本与当前账目关闭每日采摘核对表 · 2026-10-18 · 2026-10-18T12:16:42.130585100 · 农场老板旧表保持生成时的原样。当前数据仅用于对比；打印请返回当前每日核对表。查询关键字查询重置工人旧版工作量 / 地块当前工作量 / 地块旧版工资 → 当前工资分页工人-9b8bba-13PAGING-9b8bba-13新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-15PAGING-9b8bba-15新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-5PAGING-9b8bba-05新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-20PAGING-9b8bba-20新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-19PAGING-9b8bba-19新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-0PAGING-9b8bba-00新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-8PAGING-9b8bba-08新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-3PAGING-9b8bba-03新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-7PAGING-9b8bba-07新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-21PAGING-9b8bba-21新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-6PAGING-9b8bba-06新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-16PAGING-9b8bba-16新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-4PAGING-9b8bba-04新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-1PAGING-9b8bba-01新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-11PAGING-9b8bba-11新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-14PAGING-9b8bba-14新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-17PAGING-9b8bba-17新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-10PAGING-9b8bba-10新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-12PAGING-9b8bba-12新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-18PAGING-9b8bba-18新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00共 22 条 · 第 1 / 2 页每页10条20条50条上一页下一页生成时的原表每日采摘核对表2026-10-18 · 2026-10-18T12:16:42.130585100查询关键字查询重置工号姓名各班组采摘量上午工作量下午工作量上午工资（元）下午工资（元）当天工资（元）工人签字PAGING-9b8bba-13分页工人-9b8bba-13上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-15分页工人-9b8bba-15上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-05分页工人-9b8bba-5上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-20分页工人-9b8bba-20上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-19分页工人-9b8bba-19上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-00分页工人-9b8bba-0上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-08分页工人-9b8bba-8上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-03分页工人-9b8bba-3上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-07分页工人-9b8bba-7上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-21分页工人-9b8bba-21上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-06分页工人-9b8bba-6上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-16分页工人-9b8bba-16上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-04分页工人-9b8bba-4上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-01分页工人-9b8bba-1上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-11分页工人-9b8bba-11上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-14分页工人-9b8bba-14上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-17分页工人-9b8bba-17上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-10分页工人-9b8bba-10上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-12分页工人-9b8bba-12上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-18分页工人-9b8bba-18上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00共 22 条 · 第 1 / 2 页每页10条20条50条上一页下一页相关修改经过查询关键字查询重置没有符合查询条件的数据。共 0 条 · 第 1 / 1 页每页10条20条50条上一页下一页没有后续相关修改记录。\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('dialog', { name: '历史打印快照' })\nExpected substring: \u001b[32m\"20公斤\"\u001b[39m\nReceived string:    \u001b[31m\"旧打印版本与当前账目关闭每日采摘核对表 · 2026-10-18 · 2026-10-18T12:16:42.130585100 · 农场老板旧表保持生成时的原样。当前数据仅用于对比；打印请返回当前每日核对表。查询关键字查询重置工人旧版工作量 / 地块当前工作量 / 地块旧版工资 → 当前工资分页工人-9b8bba-13PAGING-9b8bba-13新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-15PAGING-9b8bba-15新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-5PAGING-9b8bba-05新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-20PAGING-9b8bba-20新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-19PAGING-9b8bba-19新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-0PAGING-9b8bba-00新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-8PAGING-9b8bba-08新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-3PAGING-9b8bba-03新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-7PAGING-9b8bba-07新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-21PAGING-9b8bba-21新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-6PAGING-9b8bba-06新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-16PAGING-9b8bba-16新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-4PAGING-9b8bba-04新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-1PAGING-9b8bba-01新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-11PAGING-9b8bba-11新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-14PAGING-9b8bba-14新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-17PAGING-9b8bba-17新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-10PAGING-9b8bba-10新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-12PAGING-9b8bba-12新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-18PAGING-9b8bba-18新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00共 22 条 · 第 1 / 2 页每页10条20条50条上一页下一页生成时的原表每日采摘核对表2026-10-18 · 2026-10-18T12:16:42.130585100查询关键字查询重置工号姓名各班组采摘量上午工作量下午工作量上午工资（元）下午工资（元）当天工资（元）工人签字PAGING-9b8bba-13分页工人-9b8bba-13上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-15分页工人-9b8bba-15上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-05分页工人-9b8bba-5上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-20分页工人-9b8bba-20上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-19分页工人-9b8bba-19上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-00分页工人-9b8bba-0上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-08分页工人-9b8bba-8上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-03分页工人-9b8bba-3上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-07分页工人-9b8bba-7上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-21分页工人-9b8bba-21上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-06分页工人-9b8bba-6上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-16分页工人-9b8bba-16上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-04分页工人-9b8bba-4上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-01分页工人-9b8bba-1上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-11分页工人-9b8bba-11上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-14分页工人-9b8bba-14上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-17分页工人-9b8bba-17上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-10分页工人-9b8bba-10上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-12分页工人-9b8bba-12上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-18分页工人-9b8bba-18上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00共 22 条 · 第 1 / 2 页每页10条20条50条上一页下一页相关修改经过查询关键字查询重置没有符合查询条件的数据。共 0 条 · 第 1 / 1 页每页10条20条50条上一页下一页没有后续相关修改记录。\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" getByRole('dialog', { name: '历史打印快照' }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog', { name: '历史打印快照' })\u001b[22m\n\u001b[2m    8 × locator resolved to <section role=\"dialog\" aria-modal=\"true\" aria-label=\"历史打印快照\" class=\"modal wide-modal\">…</section>\u001b[22m\n\u001b[2m      - unexpected value \"旧打印版本与当前账目关闭每日采摘核对表 · 2026-10-18 · 2026-10-18T12:16:42.130585100 · 农场老板旧表保持生成时的原样。当前数据仅用于对比；打印请返回当前每日核对表。查询关键字查询重置工人旧版工作量 / 地块当前工作量 / 地块旧版工资 → 当前工资分页工人-9b8bba-13PAGING-9b8bba-13新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-15PAGING-9b8bba-15新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-5PAGING-9b8bba-05新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-20PAGING-9b8bba-20新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-19PAGING-9b8bba-19新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-0PAGING-9b8bba-00新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-8PAGING-9b8bba-08新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-3PAGING-9b8bba-03新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-7PAGING-9b8bba-07新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-21PAGING-9b8bba-21新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-6PAGING-9b8bba-06新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-16PAGING-9b8bba-16新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-4PAGING-9b8bba-04新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-1PAGING-9b8bba-01新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-11PAGING-9b8bba-11新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-14PAGING-9b8bba-14新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-17PAGING-9b8bba-17新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-10PAGING-9b8bba-10新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-12PAGING-9b8bba-12新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-18PAGING-9b8bba-18新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00共 22 条 · 第 1 / 2 页每页10条20条50条上一页下一页生成时的原表每日采摘核对表2026-10-18 · 2026-10-18T12:16:42.130585100查询关键字查询重置工号姓名各班组采摘量上午工作量下午工作量上午工资（元）下午工资（元）当天工资（元）工人签字PAGING-9b8bba-13分页工人-9b8bba-13上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-15分页工人-9b8bba-15上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-05分页工人-9b8bba-5上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-20分页工人-9b8bba-20上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-19分页工人-9b8bba-19上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-00分页工人-9b8bba-0上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-08分页工人-9b8bba-8上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-03分页工人-9b8bba-3上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-07分页工人-9b8bba-7上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-21分页工人-9b8bba-21上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-06分页工人-9b8bba-6上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-16分页工人-9b8bba-16上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-04分页工人-9b8bba-4上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-01分页工人-9b8bba-1上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-11分页工人-9b8bba-11上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-14分页工人-9b8bba-14上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-17分页工人-9b8bba-17上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-10分页工人-9b8bba-10上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-12分页工人-9b8bba-12上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-18分页工人-9b8bba-18上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00共 22 条 · 第 1 / 2 页每页10条20条50条上一页下一页相关修改经过查询关键字查询重置没有符合查询条件的数据。共 0 条 · 第 1 / 1 页每页10条20条50条上一页下一页没有后续相关修改记录。\"\u001b[22m\n\n    at D:\\agent_learning\\Agricultural treade\\frontend\\e2e\\feature-expansion.spec.ts:29:177",
+                    "location": {
+                      "file": "D:\\agent_learning\\Agricultural treade\\frontend\\e2e\\feature-expansion.spec.ts",
+                      "column": 177,
+                      "line": 29
+                    },
+                    "snippet": "  27 |   await page.evaluate(()=>{window.print=()=>window.dispatchEvent(new Event('afterprint'))});await page.getByRole('button',{name:'打印核对表',exact:true}).click();await expect(page.getByRole('button',{name:'查看旧版与当前差异',exact:true}).first()).toBeVisible()\n  28 |   await go(page,'采摘账本',width);await page.getByLabel('搜索采摘记录').fill(f.worker.name);row=page.locator('.ledger-table tbody tr');await row.getByRole('button',{name:'编辑数量',exact:true}).click();dialog=page.getByRole('dialog');await dialog.getByLabel('本次地块',{exact:true}).selectOption(f.a.id);await dialog.getByLabel('采摘重量',{exact:true}).fill('25');await dialog.getByLabel('修改原因',{exact:true}).fill('现场复核少记5公斤');await dialog.getByRole('button',{name:'保存记录',exact:true}).click();await expect(dialog).toBeHidden();await expect(row).toContainText('55 公斤')\n> 29 |   await go(page,'每日核对',width);await page.getByRole('button',{name:'查看旧版与当前差异',exact:true}).first().click();dialog=page.getByRole('dialog',{name:'历史打印快照'});await expect(dialog).toContainText('20公斤');await expect(dialog).toContainText('25公斤');await expect(dialog).toContainText('现场复核少记5公斤');await page.screenshot({path:output+`/snapshot-${width}.png`,fullPage:true});await dialog.getByRole('button',{name:'关闭',exact:true}).click()\n     |                                                                                                                                                                                 ^\n  30 |   await go(page,'资料批量导入',width);const template=await request.get('/api/imports/workers/template',{headers:f.headers});await page.getByLabel('选择 Excel 文件').setInputFiles({name:'工人资料.xlsx',mimeType:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',buffer:await template.body()});await page.getByRole('button',{name:'预览并校验',exact:true}).click();await expect(page.locator('tbody')).toContainText('跳过');page.once('dialog',d=>d.accept());await page.getByRole('button',{name:'确认整批导入',exact:true}).click();await expect(page.getByText('整批导入成功',{exact:true})).toBeVisible();expect(errors).toEqual([])\n  31 | })\n  32 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\agent_learning\\Agricultural treade\\frontend\\e2e\\feature-expansion.spec.ts",
+                        "column": 177,
+                        "line": 29
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('dialog', { name: '历史打印快照' })\nExpected substring: \u001b[32m\"20公斤\"\u001b[39m\nReceived string:    \u001b[31m\"旧打印版本与当前账目关闭每日采摘核对表 · 2026-10-18 · 2026-10-18T12:16:42.130585100 · 农场老板旧表保持生成时的原样。当前数据仅用于对比；打印请返回当前每日核对表。查询关键字查询重置工人旧版工作量 / 地块当前工作量 / 地块旧版工资 → 当前工资分页工人-9b8bba-13PAGING-9b8bba-13新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-15PAGING-9b8bba-15新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-5PAGING-9b8bba-05新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-20PAGING-9b8bba-20新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-19PAGING-9b8bba-19新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-0PAGING-9b8bba-00新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-8PAGING-9b8bba-08新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-3PAGING-9b8bba-03新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-7PAGING-9b8bba-07新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-21PAGING-9b8bba-21新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-6PAGING-9b8bba-06新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-16PAGING-9b8bba-16新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-4PAGING-9b8bba-04新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-1PAGING-9b8bba-01新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-11PAGING-9b8bba-11新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-14PAGING-9b8bba-14新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-17PAGING-9b8bba-17新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-10PAGING-9b8bba-10新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-12PAGING-9b8bba-12新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-18PAGING-9b8bba-18新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00共 22 条 · 第 1 / 2 页每页10条20条50条上一页下一页生成时的原表每日采摘核对表2026-10-18 · 2026-10-18T12:16:42.130585100查询关键字查询重置工号姓名各班组采摘量上午工作量下午工作量上午工资（元）下午工资（元）当天工资（元）工人签字PAGING-9b8bba-13分页工人-9b8bba-13上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-15分页工人-9b8bba-15上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-05分页工人-9b8bba-5上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-20分页工人-9b8bba-20上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-19分页工人-9b8bba-19上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-00分页工人-9b8bba-0上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-08分页工人-9b8bba-8上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-03分页工人-9b8bba-3上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-07分页工人-9b8bba-7上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-21分页工人-9b8bba-21上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-06分页工人-9b8bba-6上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-16分页工人-9b8bba-16上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-04分页工人-9b8bba-4上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-01分页工人-9b8bba-1上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-11分页工人-9b8bba-11上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-14分页工人-9b8bba-14上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-17分页工人-9b8bba-17上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-10分页工人-9b8bba-10上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-12分页工人-9b8bba-12上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-18分页工人-9b8bba-18上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00共 22 条 · 第 1 / 2 页每页10条20条50条上一页下一页相关修改经过查询关键字查询重置没有符合查询条件的数据。共 0 条 · 第 1 / 1 页每页10条20条50条上一页下一页没有后续相关修改记录。\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" getByRole('dialog', { name: '历史打印快照' }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog', { name: '历史打印快照' })\u001b[22m\n\u001b[2m    8 × locator resolved to <section role=\"dialog\" aria-modal=\"true\" aria-label=\"历史打印快照\" class=\"modal wide-modal\">…</section>\u001b[22m\n\u001b[2m      - unexpected value \"旧打印版本与当前账目关闭每日采摘核对表 · 2026-10-18 · 2026-10-18T12:16:42.130585100 · 农场老板旧表保持生成时的原样。当前数据仅用于对比；打印请返回当前每日核对表。查询关键字查询重置工人旧版工作量 / 地块当前工作量 / 地块旧版工资 → 当前工资分页工人-9b8bba-13PAGING-9b8bba-13新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-15PAGING-9b8bba-15新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-5PAGING-9b8bba-05新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-20PAGING-9b8bba-20新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-19PAGING-9b8bba-19新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-0PAGING-9b8bba-00新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-8PAGING-9b8bba-08新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-3PAGING-9b8bba-03新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-7PAGING-9b8bba-07新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-21PAGING-9b8bba-21新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-6PAGING-9b8bba-06新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-16PAGING-9b8bba-16新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-4PAGING-9b8bba-04新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-1PAGING-9b8bba-01新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-11PAGING-9b8bba-11新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-14PAGING-9b8bba-14新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-17PAGING-9b8bba-17新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-10PAGING-9b8bba-10新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-12PAGING-9b8bba-12新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00分页工人-9b8bba-18PAGING-9b8bba-18新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐新流程番茄-9b8bba 上午 采摘筐数 1筐原组-9b8bba / 原棚-9b8bba 采摘筐数 1筐3.00 → 3.00共 22 条 · 第 1 / 2 页每页10条20条50条上一页下一页生成时的原表每日采摘核对表2026-10-18 · 2026-10-18T12:16:42.130585100查询关键字查询重置工号姓名各班组采摘量上午工作量下午工作量上午工资（元）下午工资（元）当天工资（元）工人签字PAGING-9b8bba-13分页工人-9b8bba-13上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-15分页工人-9b8bba-15上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-05分页工人-9b8bba-5上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-20分页工人-9b8bba-20上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-19分页工人-9b8bba-19上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-00分页工人-9b8bba-0上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-08分页工人-9b8bba-8上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-03分页工人-9b8bba-3上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-07分页工人-9b8bba-7上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-21分页工人-9b8bba-21上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-06分页工人-9b8bba-6上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-16分页工人-9b8bba-16上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-04分页工人-9b8bba-4上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-01分页工人-9b8bba-1上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-11分页工人-9b8bba-11上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-14分页工人-9b8bba-14上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-17分页工人-9b8bba-17上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-10分页工人-9b8bba-10上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-12分页工人-9b8bba-12上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00PAGING-9b8bba-18分页工人-9b8bba-18上午 原组-9b8bba · 新流程番茄-9b8bba：采摘筐数 1筐新流程番茄-9b8bba：采摘筐数 1筐—3.000.003.00共 22 条 · 第 1 / 2 页每页10条20条50条上一页下一页相关修改经过查询关键字查询重置没有符合查询条件的数据。共 0 条 · 第 1 / 1 页每页10条20条50条上一页下一页没有后续相关修改记录。\"\u001b[22m\n\n\n  27 |   await page.evaluate(()=>{window.print=()=>window.dispatchEvent(new Event('afterprint'))});await page.getByRole('button',{name:'打印核对表',exact:true}).click();await expect(page.getByRole('button',{name:'查看旧版与当前差异',exact:true}).first()).toBeVisible()\n  28 |   await go(page,'采摘账本',width);await page.getByLabel('搜索采摘记录').fill(f.worker.name);row=page.locator('.ledger-table tbody tr');await row.getByRole('button',{name:'编辑数量',exact:true}).click();dialog=page.getByRole('dialog');await dialog.getByLabel('本次地块',{exact:true}).selectOption(f.a.id);await dialog.getByLabel('采摘重量',{exact:true}).fill('25');await dialog.getByLabel('修改原因',{exact:true}).fill('现场复核少记5公斤');await dialog.getByRole('button',{name:'保存记录',exact:true}).click();await expect(dialog).toBeHidden();await expect(row).toContainText('55 公斤')\n> 29 |   await go(page,'每日核对',width);await page.getByRole('button',{name:'查看旧版与当前差异',exact:true}).first().click();dialog=page.getByRole('dialog',{name:'历史打印快照'});await expect(dialog).toContainText('20公斤');await expect(dialog).toContainText('25公斤');await expect(dialog).toContainText('现场复核少记5公斤');await page.screenshot({path:output+`/snapshot-${width}.png`,fullPage:true});await dialog.getByRole('button',{name:'关闭',exact:true}).click()\n     |                                                                                                                                                                                 ^\n  30 |   await go(page,'资料批量导入',width);const template=await request.get('/api/imports/workers/template',{headers:f.headers});await page.getByLabel('选择 Excel 文件').setInputFiles({name:'工人资料.xlsx',mimeType:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',buffer:await template.body()});await page.getByRole('button',{name:'预览并校验',exact:true}).click();await expect(page.locator('tbody')).toContainText('跳过');page.once('dialog',d=>d.accept());await page.getByRole('button',{name:'确认整批导入',exact:true}).click();await expect(page.getByText('整批导入成功',{exact:true})).toBeVisible();expect(errors).toEqual([])\n  31 | })\n  32 |\n    at D:\\agent_learning\\Agricultural treade\\frontend\\e2e\\feature-expansion.spec.ts:29:177"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:17:18.050Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\agent_learning\\Agricultural treade\\docs\\regression-runs\\20261018-121306-3c677e\\browser-artifacts\\feature-expansion-地块、导入和打印快照完整流程-1440px\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\agent_learning\\Agricultural treade\\docs\\regression-runs\\20261018-121306-3c677e\\browser-artifacts\\feature-expansion-地块、导入和打印快照完整流程-1440px\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\agent_learning\\Agricultural treade\\docs\\regression-runs\\20261018-121306-3c677e\\browser-artifacts\\feature-expansion-地块、导入和打印快照完整流程-1440px\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\agent_learning\\Agricultural treade\\frontend\\e2e\\feature-expansion.spec.ts",
+                    "column": 177,
+                    "line": 29
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "29f9f8a1ab8d7cb82dcf-5c94d85f13e3f59c34ad",
+          "file": "feature-expansion.spec.ts",
+          "line": 17,
+          "column": 31
+        },
+        {
+          "title": "地块、导入和打印快照完整流程 390px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9512,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:17:29.401Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "29f9f8a1ab8d7cb82dcf-1fb15c1cc8df49a98b17",
+          "file": "feature-expansion.spec.ts",
+          "line": 17,
+          "column": 31
+        }
+      ]
+    },
+    {
+      "title": "history-regression.spec.ts",
+      "file": "history-regression.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "记录员跨账号更正历史已结算记录，原快照不变 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2187,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:17:39.284Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b6355d4c70bf6a3adb34-5ba76f0ade65d4714e4c",
+          "file": "history-regression.spec.ts",
+          "line": 4,
+          "column": 31
+        },
+        {
+          "title": "记录员跨账号更正历史已结算记录，原快照不变 390px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2119,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:17:41.492Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b6355d4c70bf6a3adb34-2561049ae6f15f042573",
+          "file": "history-regression.spec.ts",
+          "line": 4,
+          "column": 31
+        }
+      ]
+    },
+    {
+      "title": "ledger.spec.ts",
+      "file": "ledger.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "desktop navigation, payroll, catalog, audit and export",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3155,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:17:43.658Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "9298b8f752453899f7f6-b0d7a6b5a666ef916ff3",
+          "file": "ledger.spec.ts",
+          "line": 14,
+          "column": 1
+        },
+        {
+          "title": "offline save survives reload and uploads exactly once on reconnect",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2756,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:17:46.825Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "9298b8f752453899f7f6-42448a60bcf98c4c7a27",
+          "file": "ledger.spec.ts",
+          "line": 21,
+          "column": 1
+        },
+        {
+          "title": "online optimistic conflict preserves input without adding a sync item",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2442,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:17:49.594Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "9298b8f752453899f7f6-9ce0ba69de3e09a5f8b6",
+          "file": "ledger.spec.ts",
+          "line": 24,
+          "column": 1
+        },
+        {
+          "title": "mobile layout fits viewport and recorder cannot access admin pages",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1969,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:17:52.057Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "9298b8f752453899f7f6-b98aac6fc48a504299ca",
+          "file": "ledger.spec.ts",
+          "line": 29,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "logout.spec.ts",
+      "file": "logout.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "顶部退出登录在 1440px 可用，并注销后台会话",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1500,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:17:54.077Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "01b3c3c82abdc8a715b2-4adaee34974e8edbdadd",
+          "file": "logout.spec.ts",
+          "line": 4,
+          "column": 3
+        },
+        {
+          "title": "顶部退出登录在 390px 可用，并注销后台会话",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1601,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:17:55.594Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "01b3c3c82abdc8a715b2-323183d61184ebaa600c",
+          "file": "logout.spec.ts",
+          "line": 4,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "offline-development.spec.ts",
+      "file": "offline-development.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "开发入口断网刷新和关闭重开保留页面及待传记录",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9578,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:17:57.234Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "165c293408e1281027ca-0f3112139fcd9cf5a50d",
+          "file": "offline-development.spec.ts",
+          "line": 10,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "reference-improvements.spec.ts",
+      "file": "reference-improvements.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "老板通过资料页面维护班组和筐型",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2255,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:18:06.856Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "adb3133dbdbd9560e431-adc4640928d6fce176e2",
+          "file": "reference-improvements.spec.ts",
+          "line": 7,
+          "column": 1
+        },
+        {
+          "title": "group quantities, tare, daily signatures and print at 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8058,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:18:09.126Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "adb3133dbdbd9560e431-0376519e61fd51b4da43",
+          "file": "reference-improvements.spec.ts",
+          "line": 26,
+          "column": 31
+        },
+        {
+          "title": "group quantities, tare, daily signatures and print at 390px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6168,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:18:17.204Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "adb3133dbdbd9560e431-3c4b87a84addccc02171",
+          "file": "reference-improvements.spec.ts",
+          "line": 26,
+          "column": 31
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-18T04:15:24.167Z",
+    "duration": 180500.93300000002,
+    "expected": 45,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

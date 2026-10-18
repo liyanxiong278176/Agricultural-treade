@@ -1,0 +1,27 @@
+<script setup lang="ts">
+import {ref,computed} from 'vue'
+import DataList from './DataList.vue'
+import {RefreshCw,CheckCircle2,AlertTriangle,CloudUpload} from 'lucide-vue-next'
+import {queue,pendingCount,conflictCount,synchronize,syncing,lastSync,syncError,discard,submit,loadQueue,boot,db,activeRule} from '../data'
+import type {Harvest,Operation,Pending} from '../types'
+const emit=defineEmits<{edit:[record:Harvest|null,preserved:Operation|null,conflictId:string];changed:[]}>()
+const error=ref(''),state=ref('')
+const searchable=computed(()=>queue.value.filter(q=>!state.value||q.state===state.value).map(q=>({...q,searchText:label(q)})))
+function label(q:Pending){return `${boot.value?.workers.find(w=>w.id===q.operation.workerId)?.name||'工人'} · ${q.operation.workDate} ${q.operation.period==='AM'?'上午':'下午'} · ${boot.value?.products.find(p=>p.id===q.operation.productId)?.name||'产品'}`}
+function quantity(q:Pending){if(q.operation.entry?.mode==='MOVE')return '归属：'+(boot.value?.groups?.find(g=>g.id===q.operation.entry?.groupId)?.name||'未分组')+' / '+(boot.value?.plots?.find(p=>p.id===q.operation.entry?.plotId)?.name||'未指定地块')+' → '+(boot.value?.groups?.find(g=>g.id===(q.operation.entry?.targetGroupId??q.operation.entry?.groupId))?.name||'未分组')+' / '+(boot.value?.plots?.find(p=>p.id===q.operation.entry?.targetPlotId)?.name||'未指定地块')+'（总量与工资不变）';const input=q.operation.inputs;const unit=input.weightUnit==='kg'?'公斤':input.weightUnit==='jin'?'斤':'克';if(input.totalWeight!==null)return '总重量 '+input.totalWeight+' '+unit;const rule=activeRule(q.operation.productId,q.operation.workDate);return Object.entries(input.quantities).map(([key,value])=>{const stage=rule?.stages.find(s=>s.key===key);return `${stage?.label||key} ${value} ${stage?.type==='PIECE'?'筐':unit}`}).join(' / ')}
+async function remove(q:Pending){if(confirm('仅舍弃这项本机操作，不删除后台记录。确定已核对吗？')){await discard(q.operationId);emit('changed')}}
+async function edit(q:Pending,preserve:boolean){if(!q.result?.record)return;emit('edit',q.result.record,preserve?q.operation:null,q.operationId)}
+async function restore(q:Pending){try{if(!q.result?.record)return;const r=q.result.record;await submit({...q.operation,operationId:crypto.randomUUID(),action:'RESTORE',recordId:r.id,version:r.version,inputs:JSON.parse(r.inputs_json)},q.operationId);emit('changed')}catch(e){error.value=(e as Error).message}}
+async function retry(q:Pending){await db.queue.update(q.operationId,{state:'pending'});await loadQueue();await synchronize()}
+</script>
+<template><div class="page-intro"><div><p class="eyebrow">从本机到农场账本</p><h1>同步中心</h1><p class="muted">待同步与冲突都保留在这台设备，切换账号后仍归原账号所有。</p></div><button class="primary" :disabled="syncing" @click="synchronize"><RefreshCw :size="18" :class="{spin:syncing}"/>{{syncing?'正在同步':'立即同步'}}</button></div>
+  <div class="stats-grid three"><article class="stat"><CloudUpload/><span>待同步操作</span><strong>{{pendingCount}}<small>项</small></strong></article><article class="stat"><AlertTriangle/><span>需要核对</span><strong>{{conflictCount}}<small>项</small></strong></article><article class="stat sync-stat"><CheckCircle2/><span>上次成功同步</span><strong>{{lastSync||'尚无同步回执'}}</strong></article></div>
+  <p v-if="syncError||error" class="notice danger">{{error||syncError}}</p>
+  <div v-if="!queue.length" class="empty panel"><CheckCircle2 :size="42"/><h2>本机操作已处理</h2><p>新的离线记录会先保存在这里，联网后自动发送。</p></div>
+  <label>操作状态<select v-model="state" aria-label="操作状态"><option value="">全部</option><option value="pending">待同步</option><option value="conflict">需核对</option><option value="rejected">未通过校验</option></select></label>
+  <DataList :rows="searchable" scope="同步操作" v-slot="{items}"><article v-for="q in items" :key="q.operationId" class="panel sync-item"><div class="section-title"><h3>{{label(q)}}</h3><span class="tag" :class="q.state==='pending'?'warning':'error'">{{q.state==='pending'?'待同步':q.state==='conflict'?'需核对':'未通过校验'}}</span></div><p>{{q.message}}</p><p class="muted">本机数量：{{quantity(q)}}</p><p class="muted">{{new Date(q.createdAt).toLocaleString('zh-CN')}} · {{q.operation.action}}</p>
+    <div v-if="q.result?.record" class="comparison"><div><small>后台最新记录 · {{q.result.record.updated_name}}</small><strong>{{q.result.record.quote?.parts.map((p:any)=>`${p.label} ${p.quantity}${p.type==='PIECE'?'筐':'公斤'}`).join(' / ')||'已删除记录'}}</strong><span>版本 {{q.result.record.version}}</span></div><div><small>你填写的内容 · 已保留</small><strong>{{JSON.stringify(q.operation.inputs.quantities)}}</strong><span v-if="q.operation.inputs.totalWeight">总重量 {{q.operation.inputs.totalWeight}} {{q.operation.inputs.weightUnit}}</span></div></div>
+    <p v-if="q.result?.status==='VERSION_CONFLICT'" class="notice">该记录已被【{{q.result.record?.updated_name}}】更新。你的输入已保留，请核对后再次提交；提交仍会检查最新版本。</p>
+    <div class="button-row"><button v-if="q.state==='pending'&&!q.attempted&&q.operation.action==='CREATE'" @click="emit('edit',null,q.operation,q.operationId)">编辑本机记录</button><template v-if="q.result?.record&&!q.result.record.deleted"><button @click="edit(q,false)">以最新记录重新修改</button><button v-if="q.result.status==='VERSION_CONFLICT'" class="primary" @click="edit(q,true)">保留我的输入，核对后重提</button></template><button v-if="q.result?.record?.deleted" class="primary" @click="restore(q)">恢复原记录</button><button v-if="q.state==='rejected'" @click="retry(q)">重新校验</button><button class="text-danger" @click="remove(q)">舍弃本机操作</button></div>
+  </article></DataList>
+</template>

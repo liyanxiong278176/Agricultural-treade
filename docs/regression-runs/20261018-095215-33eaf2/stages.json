@@ -1,0 +1,61 @@
+﻿[
+    {
+        "name":  "dependencies",
+        "status":  "PASS",
+        "exitCode":  0,
+        "seconds":  7.9
+    },
+    {
+        "name":  "frontend-unit",
+        "status":  "PASS",
+        "exitCode":  0,
+        "seconds":  1.5
+    },
+    {
+        "name":  "frontend-build",
+        "status":  "PASS",
+        "exitCode":  0,
+        "seconds":  10.7
+    },
+    {
+        "name":  "backend-h2",
+        "status":  "PASS",
+        "exitCode":  0,
+        "seconds":  16.4
+    },
+    {
+        "name":  "database-prepare",
+        "status":  "PASS",
+        "exitCode":  0,
+        "seconds":  0
+    },
+    {
+        "name":  "backend-mysql",
+        "status":  "PASS",
+        "exitCode":  0,
+        "seconds":  19.4
+    },
+    {
+        "name":  "backend-package",
+        "status":  "PASS",
+        "exitCode":  0,
+        "seconds":  5.2
+    },
+    {
+        "name":  "browser",
+        "status":  "PASS",
+        "exitCode":  0,
+        "seconds":  94.2
+    },
+    {
+        "name":  "workbook",
+        "status":  "PASS",
+        "exitCode":  0,
+        "seconds":  0.6
+    },
+    {
+        "name":  "backend-restart",
+        "status":  "PASS",
+        "records":  1
+    }
+]

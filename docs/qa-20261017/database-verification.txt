@@ -1,0 +1,7 @@
+mysql_version
+8.0.30
+entity	total
+records	98
+deleted_records	4
+audit_log	115
+operation_receipt	63

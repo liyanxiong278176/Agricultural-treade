@@ -1,0 +1,38 @@
+{
+  "worker": {
+    "id": "8dbb69ed-5c4a-4c90-ad24-7a1a3a2264d1",
+    "code": "CHANGE-6b303d",
+    "name": "付款演示工人-6b303d",
+    "phone": "",
+    "active": true,
+    "group_id": ""
+  },
+  "recordId": "badc6d6a-5d91-46fc-8134-c514832139da",
+  "before": {
+    "confirmed": 15,
+    "firstPayment": 10
+  },
+  "afterCorrection": {
+    "confirmed": 21,
+    "unpaid": 11
+  },
+  "afterSecondPayment": {
+    "name": "付款演示工人-6b303d",
+    "code": "CHANGE-6b303d",
+    "pieces": 7,
+    "earned": 21,
+    "settled": 21,
+    "workerId": "8dbb69ed-5c4a-4c90-ad24-7a1a3a2264d1",
+    "weightKg": 0,
+    "pending": 0,
+    "paid": 21,
+    "confirmed": 21,
+    "unpaid": 0
+  },
+  "afterReduction": {
+    "confirmed": 9,
+    "unpaid": -12,
+    "blockedFurtherPayment": true
+  },
+  "originalSnapshotUnchanged": true
+}

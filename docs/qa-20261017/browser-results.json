@@ -1,0 +1,843 @@
+{
+  "config": {
+    "argv": [
+      "D:\\node\\node.exe",
+      "D:\\agent_learning\\Agricultural treade\\frontend\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config",
+      "playwright.acceptance.config.ts"
+    ],
+    "configFile": "D:\\agent_learning\\Agricultural treade\\frontend\\playwright.acceptance.config.ts",
+    "rootDir": "D:/agent_learning/Agricultural treade/frontend/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/agent_learning/Agricultural treade/docs/qa-20261017/browser-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "D:/agent_learning/Agricultural treade/frontend/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "D:\\agent_learning\\Agricultural treade\\docs\\qa-20261017\\browser-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "D:\\agent_learning\\Agricultural treade\\frontend\\e2e",
+        "snapshotDir": "D:\\agent_learning\\Agricultural treade\\frontend\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4182",
+          "channel": "chrome",
+          "headless": true,
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "timezoneId": "Asia/Singapore"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "../docs/qa-20261017/browser-results.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "../docs/qa-20261017/browser-report",
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": {
+      "command": "node node_modules/vite/bin/vite.js preview --config vite.acceptance.config.ts --host 127.0.0.1 --port 4182",
+      "url": "http://127.0.0.1:4182",
+      "reuseExistingServer": false
+    }
+  },
+  "suites": [
+    {
+      "title": "deletion.spec.ts",
+      "file": "deletion.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "1440px accepted 在线直提与结算删除权限",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4696,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-17T02:51:50.991Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5e41bb235fd50df9e5ba-c444480c708dd35406bc",
+          "file": "deletion.spec.ts",
+          "line": 5,
+          "column": 3
+        },
+        {
+          "title": "1440px rejected 在线直提与结算删除权限",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 772,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-17T02:51:56.102Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5e41bb235fd50df9e5ba-e577f4de1e5040945fe2",
+          "file": "deletion.spec.ts",
+          "line": 5,
+          "column": 3
+        },
+        {
+          "title": "1440px unreachable 在线直提与结算删除权限",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 742,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-17T02:51:56.882Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5e41bb235fd50df9e5ba-b87d00349e6fd5afffd4",
+          "file": "deletion.spec.ts",
+          "line": 5,
+          "column": 3
+        },
+        {
+          "title": "1440px conflict 在线直提与结算删除权限",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 838,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-17T02:51:57.632Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5e41bb235fd50df9e5ba-218b6133f43736b3b5f4",
+          "file": "deletion.spec.ts",
+          "line": 5,
+          "column": 3
+        },
+        {
+          "title": "1440px offline 在线直提与结算删除权限",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 729,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-17T02:51:58.477Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5e41bb235fd50df9e5ba-f241fbaaedddcd1cb950",
+          "file": "deletion.spec.ts",
+          "line": 5,
+          "column": 3
+        },
+        {
+          "title": "390px accepted 在线直提与结算删除权限",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4228,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-17T02:51:59.213Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5e41bb235fd50df9e5ba-c27d5b21721304a36725",
+          "file": "deletion.spec.ts",
+          "line": 5,
+          "column": 3
+        },
+        {
+          "title": "390px rejected 在线直提与结算删除权限",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 776,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-17T02:52:03.450Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5e41bb235fd50df9e5ba-38452a0a9213a1e1d41a",
+          "file": "deletion.spec.ts",
+          "line": 5,
+          "column": 3
+        },
+        {
+          "title": "390px unreachable 在线直提与结算删除权限",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 786,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-17T02:52:04.233Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5e41bb235fd50df9e5ba-b293e273f21be14686cb",
+          "file": "deletion.spec.ts",
+          "line": 5,
+          "column": 3
+        },
+        {
+          "title": "390px conflict 在线直提与结算删除权限",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 953,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-17T02:52:05.027Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5e41bb235fd50df9e5ba-ed9824931afdef0088bb",
+          "file": "deletion.spec.ts",
+          "line": 5,
+          "column": 3
+        },
+        {
+          "title": "390px offline 在线直提与结算删除权限",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 684,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-17T02:52:05.989Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5e41bb235fd50df9e5ba-c6c0a0d1d6ed7ef0bf5c",
+          "file": "deletion.spec.ts",
+          "line": 5,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "entry-feedback.spec.ts",
+      "file": "entry-feedback.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "记录员在 1440px 采摘账本新增及操作反馈，顶部提示自动消失",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 6872,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.toast')\nExpected substring: \u001b[32m\"已保存在本机\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('.toast') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.toast')\u001b[22m\n\u001b[2m    8 × locator resolved to <div class=\"toast\" role=\"status\">…</div>\u001b[22m\n\u001b[2m      - unexpected value \"保存成功\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.toast')\nExpected substring: \u001b[32m\"已保存在本机\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('.toast') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.toast')\u001b[22m\n\u001b[2m    8 × locator resolved to <div class=\"toast\" role=\"status\">…</div>\u001b[22m\n\u001b[2m      - unexpected value \"保存成功\"\u001b[22m\n\n    at D:\\agent_learning\\Agricultural treade\\frontend\\e2e\\entry-feedback.spec.ts:34:25",
+                    "location": {
+                      "file": "D:\\agent_learning\\Agricultural treade\\frontend\\e2e\\entry-feedback.spec.ts",
+                      "column": 25,
+                      "line": 34
+                    },
+                    "snippet": "  32 |     await page.getByRole('button',{name:'保存记录',exact:true}).click()\n  33 |     const toast=page.locator('.toast')\n> 34 |     await expect(toast).toContainText('已保存在本机')\n     |                         ^\n  35 |     let position=await toast.boundingBox()\n  36 |     expect(position!.y).toBeGreaterThanOrEqual(0)\n  37 |     expect(position!.y).toBeLessThan(80)"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\agent_learning\\Agricultural treade\\frontend\\e2e\\entry-feedback.spec.ts",
+                        "column": 25,
+                        "line": 34
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.toast')\nExpected substring: \u001b[32m\"已保存在本机\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('.toast') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.toast')\u001b[22m\n\u001b[2m    8 × locator resolved to <div class=\"toast\" role=\"status\">…</div>\u001b[22m\n\u001b[2m      - unexpected value \"保存成功\"\u001b[22m\n\n\n  32 |     await page.getByRole('button',{name:'保存记录',exact:true}).click()\n  33 |     const toast=page.locator('.toast')\n> 34 |     await expect(toast).toContainText('已保存在本机')\n     |                         ^\n  35 |     let position=await toast.boundingBox()\n  36 |     expect(position!.y).toBeGreaterThanOrEqual(0)\n  37 |     expect(position!.y).toBeLessThan(80)\n    at D:\\agent_learning\\Agricultural treade\\frontend\\e2e\\entry-feedback.spec.ts:34:25"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-17T02:52:06.701Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\agent_learning\\Agricultural treade\\docs\\qa-20261017\\browser-artifacts\\entry-feedback-记录员在-1440px-采摘账本新增及操作反馈，顶部提示自动消失\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\agent_learning\\Agricultural treade\\docs\\qa-20261017\\browser-artifacts\\entry-feedback-记录员在-1440px-采摘账本新增及操作反馈，顶部提示自动消失\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\agent_learning\\Agricultural treade\\docs\\qa-20261017\\browser-artifacts\\entry-feedback-记录员在-1440px-采摘账本新增及操作反馈，顶部提示自动消失\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\agent_learning\\Agricultural treade\\frontend\\e2e\\entry-feedback.spec.ts",
+                    "column": 25,
+                    "line": 34
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "b4c157b35e4176334534-d823c688befeb7753b58",
+          "file": "entry-feedback.spec.ts",
+          "line": 6,
+          "column": 3
+        },
+        {
+          "title": "记录员在 390px 采摘账本新增及操作反馈，顶部提示自动消失",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 6299,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.toast')\nExpected substring: \u001b[32m\"已保存在本机\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('.toast') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.toast')\u001b[22m\n\u001b[2m    9 × locator resolved to <div class=\"toast\" role=\"status\">…</div>\u001b[22m\n\u001b[2m      - unexpected value \"保存成功\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.toast')\nExpected substring: \u001b[32m\"已保存在本机\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('.toast') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.toast')\u001b[22m\n\u001b[2m    9 × locator resolved to <div class=\"toast\" role=\"status\">…</div>\u001b[22m\n\u001b[2m      - unexpected value \"保存成功\"\u001b[22m\n\n    at D:\\agent_learning\\Agricultural treade\\frontend\\e2e\\entry-feedback.spec.ts:34:25",
+                    "location": {
+                      "file": "D:\\agent_learning\\Agricultural treade\\frontend\\e2e\\entry-feedback.spec.ts",
+                      "column": 25,
+                      "line": 34
+                    },
+                    "snippet": "  32 |     await page.getByRole('button',{name:'保存记录',exact:true}).click()\n  33 |     const toast=page.locator('.toast')\n> 34 |     await expect(toast).toContainText('已保存在本机')\n     |                         ^\n  35 |     let position=await toast.boundingBox()\n  36 |     expect(position!.y).toBeGreaterThanOrEqual(0)\n  37 |     expect(position!.y).toBeLessThan(80)"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\agent_learning\\Agricultural treade\\frontend\\e2e\\entry-feedback.spec.ts",
+                        "column": 25,
+                        "line": 34
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.toast')\nExpected substring: \u001b[32m\"已保存在本机\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('.toast') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.toast')\u001b[22m\n\u001b[2m    9 × locator resolved to <div class=\"toast\" role=\"status\">…</div>\u001b[22m\n\u001b[2m      - unexpected value \"保存成功\"\u001b[22m\n\n\n  32 |     await page.getByRole('button',{name:'保存记录',exact:true}).click()\n  33 |     const toast=page.locator('.toast')\n> 34 |     await expect(toast).toContainText('已保存在本机')\n     |                         ^\n  35 |     let position=await toast.boundingBox()\n  36 |     expect(position!.y).toBeGreaterThanOrEqual(0)\n  37 |     expect(position!.y).toBeLessThan(80)\n    at D:\\agent_learning\\Agricultural treade\\frontend\\e2e\\entry-feedback.spec.ts:34:25"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-17T02:52:14.302Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\agent_learning\\Agricultural treade\\docs\\qa-20261017\\browser-artifacts\\entry-feedback-记录员在-390px-采摘账本新增及操作反馈，顶部提示自动消失\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\agent_learning\\Agricultural treade\\docs\\qa-20261017\\browser-artifacts\\entry-feedback-记录员在-390px-采摘账本新增及操作反馈，顶部提示自动消失\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\agent_learning\\Agricultural treade\\docs\\qa-20261017\\browser-artifacts\\entry-feedback-记录员在-390px-采摘账本新增及操作反馈，顶部提示自动消失\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\agent_learning\\Agricultural treade\\frontend\\e2e\\entry-feedback.spec.ts",
+                    "column": 25,
+                    "line": 34
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "b4c157b35e4176334534-085bce93b6592ab42c9e",
+          "file": "entry-feedback.spec.ts",
+          "line": 6,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "ledger.spec.ts",
+      "file": "ledger.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "desktop navigation, payroll, catalog, audit and export",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2765,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-17T02:52:21.423Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "9298b8f752453899f7f6-b0d7a6b5a666ef916ff3",
+          "file": "ledger.spec.ts",
+          "line": 13,
+          "column": 1
+        },
+        {
+          "title": "offline save survives reload and uploads exactly once on reconnect",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1503,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-17T02:52:24.377Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "9298b8f752453899f7f6-42448a60bcf98c4c7a27",
+          "file": "ledger.spec.ts",
+          "line": 20,
+          "column": 1
+        },
+        {
+          "title": "online optimistic conflict preserves input without adding a sync item",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1276,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-17T02:52:25.890Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "9298b8f752453899f7f6-9ce0ba69de3e09a5f8b6",
+          "file": "ledger.spec.ts",
+          "line": 23,
+          "column": 1
+        },
+        {
+          "title": "mobile layout fits viewport and recorder cannot access admin pages",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1150,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-17T02:52:27.175Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "9298b8f752453899f7f6-b98aac6fc48a504299ca",
+          "file": "ledger.spec.ts",
+          "line": 28,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "logout.spec.ts",
+      "file": "logout.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "顶部退出登录在 1440px 可用，并注销后台会话",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 748,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-17T02:52:28.353Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "01b3c3c82abdc8a715b2-4adaee34974e8edbdadd",
+          "file": "logout.spec.ts",
+          "line": 4,
+          "column": 3
+        },
+        {
+          "title": "顶部退出登录在 390px 可用，并注销后台会话",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 747,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-17T02:52:29.110Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "01b3c3c82abdc8a715b2-323183d61184ebaa600c",
+          "file": "logout.spec.ts",
+          "line": 4,
+          "column": 3
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-17T02:51:49.610Z",
+    "duration": 40810.442,
+    "expected": 16,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

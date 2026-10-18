@@ -1,0 +1,1858 @@
+{
+  "config": {
+    "argv": [
+      "D:\\node\\node.exe",
+      "D:\\agent_learning\\Agricultural treade\\frontend\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config",
+      "playwright.regression.config.ts"
+    ],
+    "configFile": "D:\\agent_learning\\Agricultural treade\\frontend\\playwright.regression.config.ts",
+    "rootDir": "D:/agent_learning/Agricultural treade/frontend/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": true,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/agent_learning/Agricultural treade/docs/regression-runs/20261018-120356-7c79a9/browser-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "D:/agent_learning/Agricultural treade/frontend/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "D:\\agent_learning\\Agricultural treade\\docs\\regression-runs\\20261018-120356-7c79a9\\browser-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "D:\\agent_learning\\Agricultural treade\\frontend\\e2e",
+        "snapshotDir": "D:\\agent_learning\\Agricultural treade\\frontend\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4182",
+          "channel": "chrome",
+          "headless": true,
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "timezoneId": "Asia/Singapore"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "D:\\agent_learning\\Agricultural treade\\docs\\regression-runs\\20261018-120356-7c79a9\\browser-results.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "D:\\agent_learning\\Agricultural treade\\docs\\regression-runs\\20261018-120356-7c79a9\\browser-report",
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": {
+      "command": "node node_modules/vite/bin/vite.js preview --config vite.acceptance.config.ts --host 127.0.0.1 --port 4182",
+      "url": "http://127.0.0.1:4182/api/health",
+      "reuseExistingServer": false,
+      "timeout": 60000
+    }
+  },
+  "suites": [
+    {
+      "title": "acceptance-api.spec.ts",
+      "file": "acceptance-api.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "API-01 冒烟、未登录、错误登录、记录员越权和非法月份",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 243,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:05:29.446Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a8fc35137c618e7152e3-f7c84ae699a97534cbe3",
+          "file": "acceptance-api.spec.ts",
+          "line": 27,
+          "column": 1
+        },
+        {
+          "title": "API-02 工人新增、修改、重复工号、停用拦截",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 491,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:05:29.711Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a8fc35137c618e7152e3-10aee344db536384871e",
+          "file": "acceptance-api.spec.ts",
+          "line": 38,
+          "column": 1
+        },
+        {
+          "title": "API-03 账号创建、角色调整、停用撤销已登录权限、自我保护",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 264,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:05:30.208Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a8fc35137c618e7152e3-2d0e6d640d7e00ecedf0",
+          "file": "acceptance-api.spec.ts",
+          "line": 48,
+          "column": 1
+        },
+        {
+          "title": "API-04 类别产品配置及公斤、斤、克计价和停用校验",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 203,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:05:30.479Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a8fc35137c618e7152e3-feb133314ab41139d8a7",
+          "file": "acceptance-api.spec.ts",
+          "line": 63,
+          "column": 1
+        },
+        {
+          "title": "API-05 数量、未来日期、补录说明、UUID、空批次及超大批次校验",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 168,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:05:30.690Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a8fc35137c618e7152e3-46ac928525b7d60ce890",
+          "file": "acceptance-api.spec.ts",
+          "line": 81,
+          "column": 1
+        },
+        {
+          "title": "API-06 同UUID重试、内容绑定、跨账号防复用和混合批次隔离",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 431,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:05:30.867Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a8fc35137c618e7152e3-bb31521adcc54f48d9f5",
+          "file": "acceptance-api.spec.ts",
+          "line": 89,
+          "column": 1
+        },
+        {
+          "title": "API-07 修改、逻辑删除、恢复与完整前后值审计",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 438,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:05:31.303Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a8fc35137c618e7152e3-d67b00637a88b5abf1ab",
+          "file": "acceptance-api.spec.ts",
+          "line": 106,
+          "column": 1
+        },
+        {
+          "title": "API-08 并发重放及相同业务键只能入账一次",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 191,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:05:31.746Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a8fc35137c618e7152e3-594b5804435d9afdb7f5",
+          "file": "acceptance-api.spec.ts",
+          "line": 124,
+          "column": 1
+        },
+        {
+          "title": "API-09 月度汇总、结算、晚传补结算、分次付款和真实Excel文件",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 885,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:05:31.943Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a8fc35137c618e7152e3-1af948667ca30db9e093",
+          "file": "acceptance-api.spec.ts",
+          "line": 134,
+          "column": 1
+        },
+        {
+          "title": "API-10 计费规则必填字段缺失应返回400，不能产生服务端500",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 122,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:05:32.833Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "invalid-rule-responses",
+                      "contentType": "application/json",
+                      "body": "WwogIHsKICAgICJuYW1lIjogIue8uuWwkeaooeW8jyIsCiAgICAicGF0aCI6ICIvYXBpL3J1bGVzL3RyaWFsIiwKICAgICJzdGF0dXMiOiA0MDAsCiAgICAiYm9keSI6IHsKICAgICAgIm1lc3NhZ2UiOiAi6K+36YCJ5oup5pyJ5pWI55qE6K6h6LS55qih5byPIiwKICAgICAgImRldGFpbHMiOiBudWxsCiAgICB9CiAgfSwKICB7CiAgICAibmFtZSI6ICLnvLrlsJHmqKHlvI8iLAogICAgInBhdGgiOiAiL2FwaS9ydWxlcyIsCiAgICAic3RhdHVzIjogNDAwLAogICAgImJvZHkiOiB7CiAgICAgICJtZXNzYWdlIjogIuivt+mAieaLqeacieaViOeahOiuoei0ueaooeW8jyIsCiAgICAgICJkZXRhaWxzIjogbnVsbAogICAgfQogIH0sCiAgewogICAgIm5hbWUiOiAi56m66Zi25q61IiwKICAgICJwYXRoIjogIi9hcGkvcnVsZXMvdHJpYWwiLAogICAgInN0YXR1cyI6IDQwMCwKICAgICJib2R5IjogewogICAgICAibWVzc2FnZSI6ICLorqHotLnpmLbmrrXkuI3og73kuLrnqboiLAogICAgICAiZGV0YWlscyI6IG51bGwKICAgIH0KICB9LAogIHsKICAgICJuYW1lIjogIuepuumYtuautSIsCiAgICAicGF0aCI6ICIvYXBpL3J1bGVzIiwKICAgICJzdGF0dXMiOiA0MDAsCiAgICAiYm9keSI6IHsKICAgICAgIm1lc3NhZ2UiOiAi6K6h6LS56Zi25q615LiN6IO95Li656m6IiwKICAgICAgImRldGFpbHMiOiBudWxsCiAgICB9CiAgfSwKICB7CiAgICAibmFtZSI6ICLnvLrlsJHpmLbmrrXnsbvlnosiLAogICAgInBhdGgiOiAiL2FwaS9ydWxlcy90cmlhbCIsCiAgICAic3RhdHVzIjogNDAwLAogICAgImJvZHkiOiB7CiAgICAgICJtZXNzYWdlIjogIuivt+mAieaLqeiuoeS7tuaIluiuoemHjeexu+WeiyIsCiAgICAgICJkZXRhaWxzIjogbnVsbAogICAgfQogIH0sCiAgewogICAgIm5hbWUiOiAi57y65bCR6Zi25q6157G75Z6LIiwKICAgICJwYXRoIjogIi9hcGkvcnVsZXMiLAogICAgInN0YXR1cyI6IDQwMCwKICAgICJib2R5IjogewogICAgICAibWVzc2FnZSI6ICLor7fpgInmi6norqHku7bmiJborqHph43nsbvlnosiLAogICAgICAiZGV0YWlscyI6IG51bGwKICAgIH0KICB9Cl0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a8fc35137c618e7152e3-f240d00d731d49b28fd0",
+          "file": "acceptance-api.spec.ts",
+          "line": 161,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "acceptance-network.spec.ts",
+      "file": "acceptance-network.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "NET-01 浏览器仍在线但API连接中断，原操作持久化后自动重试",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2066,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:05:32.973Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "9260c02f2177d4d44a2b-ee41cf1aa08ede73e568",
+          "file": "acceptance-network.spec.ts",
+          "line": 34,
+          "column": 1
+        },
+        {
+          "title": "NET-02 服务端已入账但响应丢失，原UUID补传仅产生一次工资和审计",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1355,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:05:35.419Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "9260c02f2177d4d44a2b-a3f90ea36d8e3d124504",
+          "file": "acceptance-network.spec.ts",
+          "line": 53,
+          "column": 1
+        },
+        {
+          "title": "NET-03 真断网后关闭页面并重开，IndexedDB与离线页面保留且恢复自动上传",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1668,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:05:36.782Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "9260c02f2177d4d44a2b-0c8d0e2424076fca4abf",
+          "file": "acceptance-network.spec.ts",
+          "line": 76,
+          "column": 1
+        },
+        {
+          "title": "SYS-01 手机手工重量录入与后台账本联通、统计切换和页面错误检查",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1301,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:05:38.458Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "9260c02f2177d4d44a2b-bcd3663752f91a9469d5",
+          "file": "acceptance-network.spec.ts",
+          "line": 96,
+          "column": 1
+        },
+        {
+          "title": "NET-04 503 后记录保留、连接恢复按原操作自动同步",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 16101,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:05:39.767Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "9260c02f2177d4d44a2b-e9e2e3875874db533206",
+          "file": "acceptance-network.spec.ts",
+          "line": 120,
+          "column": 3
+        },
+        {
+          "title": "NET-04 timeout 后记录保留、连接恢复按原操作自动同步",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 16023,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:05:55.875Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "9260c02f2177d4d44a2b-c6f986fa992018082e96",
+          "file": "acceptance-network.spec.ts",
+          "line": 120,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "confirmed-changes.spec.ts",
+      "file": "confirmed-changes.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "记录员更正、老板直接补付及历史快照保护 1440px",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 6134,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m400\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m400\u001b[39m\n    at D:\\agent_learning\\Agricultural treade\\frontend\\e2e\\confirmed-changes.spec.ts:43:297",
+                    "location": {
+                      "file": "D:\\agent_learning\\Agricultural treade\\frontend\\e2e\\confirmed-changes.spec.ts",
+                      "column": 297,
+                      "line": 43
+                    },
+                    "snippet": "  41 |   const final=await(await request.get('/api/payroll?month='+f.month,{headers:f.headers})).json(),wage=final.workers.find((w:any)=>w.workerId===f.worker.id)\n  42 |   expect(wage.confirmed).toBe(21);expect(wage.paid).toBe(21);expect(wage.unpaid).toBe(0)\n> 43 |   expect((await request.post('/api/records/operate',{headers:f.recorder,data:{operationId:randomUUID(),action:'UPDATE',recordId,workerId:f.worker.id,workDate:f.date,period:'AM',productId:f.product.id,inputs:{quantities:{main:'3'},weightUnit:'kg'},note:'',reason:'已付后复核减量',version:2}})).status()).toBe(200)\n     |                                                                                                                                                                                                                                                                                                         ^\n  44 |   await page.getByRole('button',{name:'刷新数据',exact:true}).click();await expect(row.locator('td').nth(3)).toHaveText('9.00');await expect(row.locator('td').nth(4)).toContainText('-12.00');await expect(row).toContainText('已多付 12.00 元，需线下处理');await expect(row.getByRole('button',{name:'登记付款',exact:true})).toBeDisabled()\n  45 |\n  46 |   writeFileSync(artifact(`changes-payment-proof-${width}.json`),JSON.stringify({worker:f.worker,recordId,before:{confirmed:15,firstPayment:10},afterCorrection:{confirmed:21,unpaid:11},final:wage,originalSnapshotUnchanged:true},null,2))"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\agent_learning\\Agricultural treade\\frontend\\e2e\\confirmed-changes.spec.ts",
+                        "column": 297,
+                        "line": 43
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m400\u001b[39m\n\n  41 |   const final=await(await request.get('/api/payroll?month='+f.month,{headers:f.headers})).json(),wage=final.workers.find((w:any)=>w.workerId===f.worker.id)\n  42 |   expect(wage.confirmed).toBe(21);expect(wage.paid).toBe(21);expect(wage.unpaid).toBe(0)\n> 43 |   expect((await request.post('/api/records/operate',{headers:f.recorder,data:{operationId:randomUUID(),action:'UPDATE',recordId,workerId:f.worker.id,workDate:f.date,period:'AM',productId:f.product.id,inputs:{quantities:{main:'3'},weightUnit:'kg'},note:'',reason:'已付后复核减量',version:2}})).status()).toBe(200)\n     |                                                                                                                                                                                                                                                                                                         ^\n  44 |   await page.getByRole('button',{name:'刷新数据',exact:true}).click();await expect(row.locator('td').nth(3)).toHaveText('9.00');await expect(row.locator('td').nth(4)).toContainText('-12.00');await expect(row).toContainText('已多付 12.00 元，需线下处理');await expect(row.getByRole('button',{name:'登记付款',exact:true})).toBeDisabled()\n  45 |\n  46 |   writeFileSync(artifact(`changes-payment-proof-${width}.json`),JSON.stringify({worker:f.worker,recordId,before:{confirmed:15,firstPayment:10},afterCorrection:{confirmed:21,unpaid:11},final:wage,originalSnapshotUnchanged:true},null,2))\n    at D:\\agent_learning\\Agricultural treade\\frontend\\e2e\\confirmed-changes.spec.ts:43:297"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:06:11.923Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\agent_learning\\Agricultural treade\\docs\\regression-runs\\20261018-120356-7c79a9\\browser-artifacts\\confirmed-changes-记录员更正、老板直接补付及历史快照保护-1440px\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\agent_learning\\Agricultural treade\\docs\\regression-runs\\20261018-120356-7c79a9\\browser-artifacts\\confirmed-changes-记录员更正、老板直接补付及历史快照保护-1440px\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\agent_learning\\Agricultural treade\\docs\\regression-runs\\20261018-120356-7c79a9\\browser-artifacts\\confirmed-changes-记录员更正、老板直接补付及历史快照保护-1440px\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\agent_learning\\Agricultural treade\\frontend\\e2e\\confirmed-changes.spec.ts",
+                    "column": 297,
+                    "line": 43
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "e9749060a70cd9e9c907-b40b51bf50a6d6d878c8",
+          "file": "confirmed-changes.spec.ts",
+          "line": 20,
+          "column": 31
+        },
+        {
+          "title": "记录员更正、老板直接补付及历史快照保护 390px",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 6657,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m400\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m400\u001b[39m\n    at D:\\agent_learning\\Agricultural treade\\frontend\\e2e\\confirmed-changes.spec.ts:43:297",
+                    "location": {
+                      "file": "D:\\agent_learning\\Agricultural treade\\frontend\\e2e\\confirmed-changes.spec.ts",
+                      "column": 297,
+                      "line": 43
+                    },
+                    "snippet": "  41 |   const final=await(await request.get('/api/payroll?month='+f.month,{headers:f.headers})).json(),wage=final.workers.find((w:any)=>w.workerId===f.worker.id)\n  42 |   expect(wage.confirmed).toBe(21);expect(wage.paid).toBe(21);expect(wage.unpaid).toBe(0)\n> 43 |   expect((await request.post('/api/records/operate',{headers:f.recorder,data:{operationId:randomUUID(),action:'UPDATE',recordId,workerId:f.worker.id,workDate:f.date,period:'AM',productId:f.product.id,inputs:{quantities:{main:'3'},weightUnit:'kg'},note:'',reason:'已付后复核减量',version:2}})).status()).toBe(200)\n     |                                                                                                                                                                                                                                                                                                         ^\n  44 |   await page.getByRole('button',{name:'刷新数据',exact:true}).click();await expect(row.locator('td').nth(3)).toHaveText('9.00');await expect(row.locator('td').nth(4)).toContainText('-12.00');await expect(row).toContainText('已多付 12.00 元，需线下处理');await expect(row.getByRole('button',{name:'登记付款',exact:true})).toBeDisabled()\n  45 |\n  46 |   writeFileSync(artifact(`changes-payment-proof-${width}.json`),JSON.stringify({worker:f.worker,recordId,before:{confirmed:15,firstPayment:10},afterCorrection:{confirmed:21,unpaid:11},final:wage,originalSnapshotUnchanged:true},null,2))"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\agent_learning\\Agricultural treade\\frontend\\e2e\\confirmed-changes.spec.ts",
+                        "column": 297,
+                        "line": 43
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m400\u001b[39m\n\n  41 |   const final=await(await request.get('/api/payroll?month='+f.month,{headers:f.headers})).json(),wage=final.workers.find((w:any)=>w.workerId===f.worker.id)\n  42 |   expect(wage.confirmed).toBe(21);expect(wage.paid).toBe(21);expect(wage.unpaid).toBe(0)\n> 43 |   expect((await request.post('/api/records/operate',{headers:f.recorder,data:{operationId:randomUUID(),action:'UPDATE',recordId,workerId:f.worker.id,workDate:f.date,period:'AM',productId:f.product.id,inputs:{quantities:{main:'3'},weightUnit:'kg'},note:'',reason:'已付后复核减量',version:2}})).status()).toBe(200)\n     |                                                                                                                                                                                                                                                                                                         ^\n  44 |   await page.getByRole('button',{name:'刷新数据',exact:true}).click();await expect(row.locator('td').nth(3)).toHaveText('9.00');await expect(row.locator('td').nth(4)).toContainText('-12.00');await expect(row).toContainText('已多付 12.00 元，需线下处理');await expect(row.getByRole('button',{name:'登记付款',exact:true})).toBeDisabled()\n  45 |\n  46 |   writeFileSync(artifact(`changes-payment-proof-${width}.json`),JSON.stringify({worker:f.worker,recordId,before:{confirmed:15,firstPayment:10},afterCorrection:{confirmed:21,unpaid:11},final:wage,originalSnapshotUnchanged:true},null,2))\n    at D:\\agent_learning\\Agricultural treade\\frontend\\e2e\\confirmed-changes.spec.ts:43:297"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:06:18.896Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\agent_learning\\Agricultural treade\\docs\\regression-runs\\20261018-120356-7c79a9\\browser-artifacts\\confirmed-changes-记录员更正、老板直接补付及历史快照保护-390px\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\agent_learning\\Agricultural treade\\docs\\regression-runs\\20261018-120356-7c79a9\\browser-artifacts\\confirmed-changes-记录员更正、老板直接补付及历史快照保护-390px\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\agent_learning\\Agricultural treade\\docs\\regression-runs\\20261018-120356-7c79a9\\browser-artifacts\\confirmed-changes-记录员更正、老板直接补付及历史快照保护-390px\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\agent_learning\\Agricultural treade\\frontend\\e2e\\confirmed-changes.spec.ts",
+                    "column": 297,
+                    "line": 43
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "e9749060a70cd9e9c907-8a85551d93139cdeaed7",
+          "file": "confirmed-changes.spec.ts",
+          "line": 20,
+          "column": 31
+        },
+        {
+          "title": "修改规则可直接发布，记录员维护并选择毛重筐重，净重只读",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3327,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:06:26.714Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e9749060a70cd9e9c907-1ffdf148f6633f8a2297",
+          "file": "confirmed-changes.spec.ts",
+          "line": 50,
+          "column": 1
+        },
+        {
+          "title": "更正归属只移动所选组成，查询分页可切换和过滤",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2426,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:06:30.246Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e9749060a70cd9e9c907-c28b4837b8e826e04802",
+          "file": "confirmed-changes.spec.ts",
+          "line": 64,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "deletion.spec.ts",
+      "file": "deletion.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "1440px accepted 在线直提与结算删除权限",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4408,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:06:32.715Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5e41bb235fd50df9e5ba-c444480c708dd35406bc",
+          "file": "deletion.spec.ts",
+          "line": 6,
+          "column": 3
+        },
+        {
+          "title": "1440px rejected 在线直提与结算删除权限",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 744,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:06:37.129Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5e41bb235fd50df9e5ba-e577f4de1e5040945fe2",
+          "file": "deletion.spec.ts",
+          "line": 6,
+          "column": 3
+        },
+        {
+          "title": "1440px unreachable 在线直提与结算删除权限",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 796,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:06:37.881Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5e41bb235fd50df9e5ba-b87d00349e6fd5afffd4",
+          "file": "deletion.spec.ts",
+          "line": 6,
+          "column": 3
+        },
+        {
+          "title": "1440px conflict 在线直提与结算删除权限",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 818,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:06:38.684Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5e41bb235fd50df9e5ba-218b6133f43736b3b5f4",
+          "file": "deletion.spec.ts",
+          "line": 6,
+          "column": 3
+        },
+        {
+          "title": "1440px offline 在线直提与结算删除权限",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 726,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:06:39.508Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5e41bb235fd50df9e5ba-f241fbaaedddcd1cb950",
+          "file": "deletion.spec.ts",
+          "line": 6,
+          "column": 3
+        },
+        {
+          "title": "390px accepted 在线直提与结算删除权限",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4405,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:06:40.240Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5e41bb235fd50df9e5ba-c27d5b21721304a36725",
+          "file": "deletion.spec.ts",
+          "line": 6,
+          "column": 3
+        },
+        {
+          "title": "390px rejected 在线直提与结算删除权限",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 741,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:06:44.651Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5e41bb235fd50df9e5ba-38452a0a9213a1e1d41a",
+          "file": "deletion.spec.ts",
+          "line": 6,
+          "column": 3
+        },
+        {
+          "title": "390px unreachable 在线直提与结算删除权限",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 739,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:06:45.399Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5e41bb235fd50df9e5ba-b293e273f21be14686cb",
+          "file": "deletion.spec.ts",
+          "line": 6,
+          "column": 3
+        },
+        {
+          "title": "390px conflict 在线直提与结算删除权限",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 920,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:06:46.147Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5e41bb235fd50df9e5ba-ed9824931afdef0088bb",
+          "file": "deletion.spec.ts",
+          "line": 6,
+          "column": 3
+        },
+        {
+          "title": "390px offline 在线直提与结算删除权限",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 666,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:06:47.074Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5e41bb235fd50df9e5ba-c6c0a0d1d6ed7ef0bf5c",
+          "file": "deletion.spec.ts",
+          "line": 6,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "entry-feedback.spec.ts",
+      "file": "entry-feedback.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "记录员在 1440px 采摘账本新增及操作反馈，顶部提示自动消失",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8021,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:06:47.752Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4c157b35e4176334534-d823c688befeb7753b58",
+          "file": "entry-feedback.spec.ts",
+          "line": 7,
+          "column": 3
+        },
+        {
+          "title": "记录员在 390px 采摘账本新增及操作反馈，顶部提示自动消失",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8053,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:06:55.781Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4c157b35e4176334534-085bce93b6592ab42c9e",
+          "file": "entry-feedback.spec.ts",
+          "line": 7,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "feature-expansion.spec.ts",
+      "file": "feature-expansion.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "地块、导入和打印快照完整流程 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3848,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:07:03.858Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "29f9f8a1ab8d7cb82dcf-5c94d85f13e3f59c34ad",
+          "file": "feature-expansion.spec.ts",
+          "line": 17,
+          "column": 31
+        },
+        {
+          "title": "地块、导入和打印快照完整流程 390px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5292,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:07:07.717Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "29f9f8a1ab8d7cb82dcf-1fb15c1cc8df49a98b17",
+          "file": "feature-expansion.spec.ts",
+          "line": 17,
+          "column": 31
+        }
+      ]
+    },
+    {
+      "title": "history-regression.spec.ts",
+      "file": "history-regression.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "记录员跨账号更正历史已结算记录，原快照不变 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1316,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:07:13.026Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b6355d4c70bf6a3adb34-5ba76f0ade65d4714e4c",
+          "file": "history-regression.spec.ts",
+          "line": 4,
+          "column": 31
+        },
+        {
+          "title": "记录员跨账号更正历史已结算记录，原快照不变 390px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1279,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:07:14.349Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b6355d4c70bf6a3adb34-2561049ae6f15f042573",
+          "file": "history-regression.spec.ts",
+          "line": 4,
+          "column": 31
+        }
+      ]
+    },
+    {
+      "title": "ledger.spec.ts",
+      "file": "ledger.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "desktop navigation, payroll, catalog, audit and export",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1864,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:07:15.647Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "9298b8f752453899f7f6-b0d7a6b5a666ef916ff3",
+          "file": "ledger.spec.ts",
+          "line": 14,
+          "column": 1
+        },
+        {
+          "title": "offline save survives reload and uploads exactly once on reconnect",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1450,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:07:17.522Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "9298b8f752453899f7f6-42448a60bcf98c4c7a27",
+          "file": "ledger.spec.ts",
+          "line": 21,
+          "column": 1
+        },
+        {
+          "title": "online optimistic conflict preserves input without adding a sync item",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1380,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:07:18.981Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "9298b8f752453899f7f6-9ce0ba69de3e09a5f8b6",
+          "file": "ledger.spec.ts",
+          "line": 24,
+          "column": 1
+        },
+        {
+          "title": "mobile layout fits viewport and recorder cannot access admin pages",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1061,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:07:20.374Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "9298b8f752453899f7f6-b98aac6fc48a504299ca",
+          "file": "ledger.spec.ts",
+          "line": 29,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "logout.spec.ts",
+      "file": "logout.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "顶部退出登录在 1440px 可用，并注销后台会话",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 775,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:07:21.462Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "01b3c3c82abdc8a715b2-4adaee34974e8edbdadd",
+          "file": "logout.spec.ts",
+          "line": 4,
+          "column": 3
+        },
+        {
+          "title": "顶部退出登录在 390px 可用，并注销后台会话",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 718,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:07:22.246Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "01b3c3c82abdc8a715b2-323183d61184ebaa600c",
+          "file": "logout.spec.ts",
+          "line": 4,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "offline-development.spec.ts",
+      "file": "offline-development.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "开发入口断网刷新和关闭重开保留页面及待传记录",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6211,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:07:22.981Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "165c293408e1281027ca-0f3112139fcd9cf5a50d",
+          "file": "offline-development.spec.ts",
+          "line": 10,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "reference-improvements.spec.ts",
+      "file": "reference-improvements.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "老板通过资料页面维护班组和筐型",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1338,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:07:29.214Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "adb3133dbdbd9560e431-adc4640928d6fce176e2",
+          "file": "reference-improvements.spec.ts",
+          "line": 7,
+          "column": 1
+        },
+        {
+          "title": "group quantities, tare, daily signatures and print at 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4606,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:07:30.560Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "adb3133dbdbd9560e431-0376519e61fd51b4da43",
+          "file": "reference-improvements.spec.ts",
+          "line": 26,
+          "column": 31
+        },
+        {
+          "title": "group quantities, tare, daily signatures and print at 390px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3737,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T04:07:35.174Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "adb3133dbdbd9560e431-3c4b87a84addccc02171",
+          "file": "reference-improvements.spec.ts",
+          "line": 26,
+          "column": 31
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-18T04:05:27.928Z",
+    "duration": 132142.91499999998,
+    "expected": 44,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

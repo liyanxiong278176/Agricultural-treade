@@ -1,0 +1,43 @@
+{
+  "workbox-precache-v2-http://127.0.0.1:4184/": [
+    "http://127.0.0.1:4184/index.html?__WB_REVISION__=0.j2ftctpm5uk"
+  ],
+  "farm-dev-shell-v1": [
+    "http://127.0.0.1:4184/index.html",
+    "http://127.0.0.1:4184/src/main.ts",
+    "http://127.0.0.1:4184/@vite-plugin-pwa/pwa-entry-point-loaded",
+    "http://127.0.0.1:4184/node_modules/vite/dist/client/env.mjs",
+    "http://127.0.0.1:4184/src/style.css",
+    "http://127.0.0.1:4184/node_modules/.vite/deps/vue.js?v=c1e5b15b",
+    "http://127.0.0.1:4184/@vite-plugin-pwa/virtual:pwa-register/vue",
+    "http://127.0.0.1:4184/src/offline-shell.ts",
+    "http://127.0.0.1:4184/src/components/Dashboard.vue",
+    "http://127.0.0.1:4184/src/components/SyncCenter.vue",
+    "http://127.0.0.1:4184/src/data.ts",
+    "http://127.0.0.1:4184/src/components/PayrollPage.vue",
+    "http://127.0.0.1:4184/src/components/DataList.vue",
+    "http://127.0.0.1:4184/src/components/ImportPage.vue",
+    "http://127.0.0.1:4184/src/components/PlotCostsPage.vue",
+    "http://127.0.0.1:4184/farm.svg?import",
+    "http://127.0.0.1:4184/@id/__x00__plugin-vue:export-helper",
+    "http://127.0.0.1:4184/node_modules/.vite/deps/echarts_core.js?v=b898328d",
+    "http://127.0.0.1:4184/src/components/WeightField.vue",
+    "http://127.0.0.1:4184/node_modules/.vite/deps/chunk-G3PMV62Z.js?v=412e49ad",
+    "http://127.0.0.1:4184/node_modules/.vite/deps/chunk-6RTCXMM4.js?v=412e49ad",
+    "http://127.0.0.1:4184/node_modules/.vite/deps/workbox-window.js?v=c560ca41",
+    "http://127.0.0.1:4184/@vite/client",
+    "http://127.0.0.1:4184/src/components/RecordEditor.vue",
+    "http://127.0.0.1:4184/src/components/CatalogPage.vue",
+    "http://127.0.0.1:4184/src/components/DailyReviewPage.vue",
+    "http://127.0.0.1:4184/node_modules/.vite/deps/echarts_renderers.js?v=2dd60097",
+    "http://127.0.0.1:4184/src/App.vue",
+    "http://127.0.0.1:4184/node_modules/.vite/deps/dexie.js?v=f1c3714e",
+    "http://127.0.0.1:4184/node_modules/.vite/deps/chunk-BEDHQ2Y4.js?v=412e49ad",
+    "http://127.0.0.1:4184/node_modules/.vite/deps/chunk-4JFELZPT.js?v=412e49ad",
+    "http://127.0.0.1:4184/node_modules/.vite/deps/chunk-CQSGXKFP.js?v=412e49ad",
+    "http://127.0.0.1:4184/node_modules/.vite/deps/echarts_components.js?v=f1a1f508",
+    "http://127.0.0.1:4184/node_modules/.vite/deps/echarts_charts.js?v=17abacb0",
+    "http://127.0.0.1:4184/node_modules/.vite/deps/chunk-F3YHV5CU.js?v=412e49ad",
+    "http://127.0.0.1:4184/node_modules/.vite/deps/lucide-vue-next.js?v=67cbdf74"
+  ]
+}

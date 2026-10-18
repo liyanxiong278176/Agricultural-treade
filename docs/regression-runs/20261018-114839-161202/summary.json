@@ -1,0 +1,85 @@
+{
+  "status": "FAIL",
+  "checks": [
+    {
+      "name": "dependencies",
+      "status": "FAIL",
+      "detail": ""
+    },
+    {
+      "name": "frontend-unit",
+      "status": "NOT RUN",
+      "detail": ""
+    },
+    {
+      "name": "frontend-build",
+      "status": "NOT RUN",
+      "detail": ""
+    },
+    {
+      "name": "backend-h2",
+      "status": "NOT RUN",
+      "detail": ""
+    },
+    {
+      "name": "database-prepare",
+      "status": "NOT RUN",
+      "detail": ""
+    },
+    {
+      "name": "backend-mysql",
+      "status": "NOT RUN",
+      "detail": ""
+    },
+    {
+      "name": "backend-package",
+      "status": "NOT RUN",
+      "detail": ""
+    },
+    {
+      "name": "browser",
+      "status": "NOT RUN",
+      "detail": ""
+    },
+    {
+      "name": "workbook",
+      "status": "NOT RUN",
+      "detail": ""
+    },
+    {
+      "name": "backend-restart",
+      "status": "NOT RUN",
+      "detail": ""
+    },
+    {
+      "name": "orchestration",
+      "status": "FAIL",
+      "detail": "Dependency installation failed."
+    },
+    {
+      "name": "backend-h2 results",
+      "status": "FAIL",
+      "detail": "{'tests': 0, 'failures': 0, 'errors': 0, 'skipped': 0}"
+    },
+    {
+      "name": "backend-mysql results",
+      "status": "FAIL",
+      "detail": "{'tests': 0, 'failures': 0, 'errors': 0, 'skipped': 0}"
+    },
+    {
+      "name": "frontend-unit results",
+      "status": "NOT RUN",
+      "detail": "[Errno 2] No such file or directory: 'D:\\\\agent_learning\\\\Agricultural treade\\\\docs\\\\regression-runs\\\\20261018-114839-161202\\\\frontend-unit.json'"
+    },
+    {
+      "name": "browser results",
+      "status": "NOT RUN",
+      "detail": "[Errno 2] No such file or directory: 'D:\\\\agent_learning\\\\Agricultural treade\\\\docs\\\\regression-runs\\\\20261018-114839-161202\\\\browser-results.json'"
+    }
+  ],
+  "manual": {
+    "android": "NOT VERIFIED",
+    "device_certificate_trust": "NOT VERIFIED",
+    "physical_printing": "NOT VERIFIED"
+  }
+}

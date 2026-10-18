@@ -1,0 +1,80 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "dependencies",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "frontend-unit",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "frontend-build",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "backend-h2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "database-prepare",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "backend-mysql",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "backend-package",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "browser",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "workbook",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "backend-restart",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "backend-h2 results",
+      "status": "PASS",
+      "detail": "{'tests': 47, 'failures': 0, 'errors': 0, 'skipped': 0}"
+    },
+    {
+      "name": "backend-mysql results",
+      "status": "PASS",
+      "detail": "{'tests': 47, 'failures': 0, 'errors': 0, 'skipped': 0}"
+    },
+    {
+      "name": "frontend-unit results",
+      "status": "PASS",
+      "detail": "17/17 passed"
+    },
+    {
+      "name": "browser results",
+      "status": "PASS",
+      "detail": "{'startTime': '2026-10-18T01:58:20.945Z', 'duration': 97813.178, 'expected': 41, 'skipped': 0, 'unexpected': 0, 'flaky': 0}"
+    }
+  ],
+  "manual": {
+    "android": "NOT VERIFIED",
+    "device_certificate_trust": "NOT VERIFIED",
+    "physical_printing": "NOT VERIFIED"
+  }
+}

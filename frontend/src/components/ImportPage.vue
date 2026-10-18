@@ -1,0 +1,20 @@
+<script setup lang="ts">
+import {ref,watch} from 'vue'
+import DataList from './DataList.vue'
+import {api,session,online,refresh} from '../data'
+const props=defineProps<{month:string}>()
+const kind=ref('workers'),file=ref<File|null>(null),preview=ref<any>(null),error=ref(''),message=ref(''),busy=ref(false)
+const kinds:Record<string,string>={workers:'工人',groups:'班组',categories:'产品类别',products:'产品',plots:'地块 / 大棚',baskets:'筐型'}
+watch(kind,()=>{file.value=null;preview.value=null;error.value='';message.value=''})
+function choose(e:Event){file.value=(e.target as HTMLInputElement).files?.[0]||null;preview.value=null}
+async function download(){busy.value=true;error.value='';try{const r=await fetch('/api/imports/'+kind.value+'/template',{headers:{Authorization:'Bearer '+session.value?.token}});if(!r.ok)throw new Error('下载失败，请联网重试');const url=URL.createObjectURL(await r.blob());const a=document.createElement('a');a.href=url;a.download=kinds[kind.value].replaceAll(' / ','-')+'.xlsx';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)}catch(e){error.value=(e as Error).message}finally{busy.value=false}}
+async function inspect(){if(!file.value)return;busy.value=true;error.value='';preview.value=null;message.value='';try{if(file.value.size>3_000_000)throw new Error('请选择不超过3MB的文件');const data=await new Promise<string>((resolve,reject)=>{const r=new FileReader();r.onload=()=>resolve(String(r.result).split(',')[1]);r.onerror=reject;r.readAsDataURL(file.value!)});preview.value=await api('/imports/preview',{method:'POST',body:JSON.stringify({kind:kind.value,file:data})})}catch(e){error.value=(e as Error).message}finally{busy.value=false}}
+async function commit(){if(!preview.value?.valid||!confirm('确认新增、更新及关联资料创建？本次将整批提交。'))return;busy.value=true;error.value='';try{await api('/imports/'+preview.value.id+'/confirm',{method:'POST'});message.value='整批导入成功';preview.value=null;file.value=null;await refresh(props.month)}catch(e){error.value=(e as Error).message;preview.value=null}finally{busy.value=false}}
+function fields(value:any){if(!value)return '—';const labels:Record<string,string>={name:'名称',code:'工号',phone:'电话',active:'启用',weight_kg:'单筐皮重（公斤）',category_id:'类别编号',group_id:'班组编号'};return Object.entries(value).filter(([k])=>labels[k]).map(([k,v])=>`${labels[k]}：${typeof v==='boolean'?(v?'是':'否'):v}`).join('；')}
+</script>
+<template><div class="page-intro"><div><p class="eyebrow">先预览，确认后整批提交</p><h1>资料批量导入</h1><p class="muted">工人只新增，其余资料可在保留编号后更新。</p></div></div>
+<p class="notice">下载资料表，在原行修改或添加空编号的新行，再上传。已有工号跳过；可选空白保留原值。新产品还需要老板单独配置计费规则。</p>
+<p v-if="!online" class="notice danger">批量导入需要联网。</p><p v-if="error" class="notice danger" role="alert">{{error}}</p><p v-if="message" class="notice success" role="status">{{message}}</p>
+<section class="panel"><label>资料类型<select v-model="kind" aria-label="资料类型"><option v-for="(name,key) in kinds" :key="key" :value="key">{{name}}</option></select></label><div class="button-row"><button :disabled="busy||!online" @click="download">下载已有资料及模板</button><label>选择 Excel 文件<input :key="kind" type="file" accept=".xlsx,.xls" @change="choose"/></label><button class="primary" :disabled="!file||busy||!online" @click="inspect">预览并校验</button></div><p class="muted">每批最多1000行、3MB；不支持公式。系统中不存在的班组或产品类别将在预览列出，确认后一起创建。</p></section>
+<section v-if="preview" class="panel table-wrap"><DataList :rows="preview.rows" scope="导入预览" v-slot="{items}"><table><thead><tr><th>行号</th><th>名称</th><th>结果</th><th>原资料</th><th>待保存资料</th><th>关联创建 / 错误</th></tr></thead><tbody><tr v-for="r in items" :key="r.row"><td>{{r.row}}</td><td>{{r.name}}</td><td>{{r.error?'错误':r.action==='SKIP'?'跳过':r.action==='UPDATE'?'更新':'新增'}}</td><td class="wrap-cell">{{fields(r.before)}}</td><td class="wrap-cell">{{fields(r.after)}}</td><td class="wrap-cell" :class="r.error?'text-danger':''">{{r.error||r.message||r.related?.join('；')||'—'}}</td></tr></tbody></table></DataList><p class="notice">{{preview.valid?'请核对全部新增、更新及关联创建。':'有错误，整批不会导入。请修改文件后重新预览。'}} 保存中出错也会整批撤销。</p><button class="primary" :disabled="!preview.valid||busy||!online" @click="commit">确认整批导入</button></section>
+</template>

@@ -1,0 +1,56 @@
+[
+  {
+    "name": "缺少模式",
+    "path": "/api/rules/trial",
+    "status": 400,
+    "body": {
+      "message": "请选择有效的计费模式",
+      "details": null
+    }
+  },
+  {
+    "name": "缺少模式",
+    "path": "/api/rules",
+    "status": 400,
+    "body": {
+      "message": "请选择有效的计费模式",
+      "details": null
+    }
+  },
+  {
+    "name": "空阶段",
+    "path": "/api/rules/trial",
+    "status": 400,
+    "body": {
+      "message": "计费阶段不能为空",
+      "details": null
+    }
+  },
+  {
+    "name": "空阶段",
+    "path": "/api/rules",
+    "status": 400,
+    "body": {
+      "message": "计费阶段不能为空",
+      "details": null
+    }
+  },
+  {
+    "name": "缺少阶段类型",
+    "path": "/api/rules/trial",
+    "status": 400,
+    "body": {
+      "message": "请选择计件或计重类型",
+      "details": null
+    }
+  },
+  {
+    "name": "缺少阶段类型",
+    "path": "/api/rules",
+    "status": 400,
+    "body": {
+      "message": "请选择计件或计重类型",
+      "details": null
+    }
+  }
+]

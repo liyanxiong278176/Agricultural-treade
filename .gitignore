@@ -1,0 +1,26 @@
+node_modules/
+dist/
+target/
+.local/
+*.log
+*.pid
+.env
+playwright-report/
+test-results/
+.idea/
+dev-dist/
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Retain regression reports and evidence, excluding built binaries and traces.
+docs/regression-runs/**/backend.jar
+docs/regression-runs/**/browser-artifacts/
+docs/regression-runs/**/backend-h2/
+docs/regression-runs/**/backend-mysql/
+docs/**/*.zip
+docs/**/browser-artifacts/
+docs/**/final-browser-artifacts/

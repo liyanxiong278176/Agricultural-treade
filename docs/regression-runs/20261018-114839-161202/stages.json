@@ -1,0 +1,13 @@
+﻿[
+    {
+        "name":  "dependencies",
+        "status":  "FAIL",
+        "exitCode":  -4048,
+        "seconds":  3.3
+    },
+    {
+        "name":  "orchestration",
+        "status":  "FAIL",
+        "message":  "Dependency installation failed."
+    }
+]

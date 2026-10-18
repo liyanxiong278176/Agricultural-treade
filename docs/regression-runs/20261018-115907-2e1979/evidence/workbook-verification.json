@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "sheets": [
+    "工资汇总",
+    "已确认结算快照"
+  ],
+  "workerCode": "QA-8ef38381",
+  "actualRow": [
+    "QA-8ef38381",
+    "验收工人",
+    "7.0",
+    "0.0",
+    "21.0",
+    "21.0",
+    "0.0",
+    "10.0",
+    "11.0"
+  ],
+  "checks": [
+    "ZIP CRC",
+    "OOXML parsing",
+    "two sheets",
+    "pieces=7",
+    "earned=21",
+    "settled=21",
+    "paid=10",
+    "unpaid=11",
+    "settlement snapshots"
+  ]
+}

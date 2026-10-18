@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "records": 85,
+  "checks": [
+    "non-empty records",
+    "unique IDs",
+    "all record fields unchanged",
+    "persisted session remains usable"
+  ]
+}

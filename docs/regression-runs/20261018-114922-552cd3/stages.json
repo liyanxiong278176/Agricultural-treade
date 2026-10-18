@@ -1,0 +1,49 @@
+﻿[
+    {
+        "name":  "dependencies",
+        "status":  "PASS",
+        "exitCode":  0,
+        "seconds":  7.7
+    },
+    {
+        "name":  "frontend-unit",
+        "status":  "PASS",
+        "exitCode":  0,
+        "seconds":  1.8
+    },
+    {
+        "name":  "frontend-build",
+        "status":  "PASS",
+        "exitCode":  0,
+        "seconds":  11
+    },
+    {
+        "name":  "backend-h2",
+        "status":  "PASS",
+        "exitCode":  0,
+        "seconds":  18
+    },
+    {
+        "name":  "database-prepare",
+        "status":  "PASS",
+        "exitCode":  0,
+        "seconds":  0.3
+    },
+    {
+        "name":  "backend-mysql",
+        "status":  "PASS",
+        "exitCode":  0,
+        "seconds":  23.8
+    },
+    {
+        "name":  "backend-package",
+        "status":  "FAIL",
+        "exitCode":  1,
+        "seconds":  4.9
+    },
+    {
+        "name":  "orchestration",
+        "status":  "FAIL",
+        "message":  "Build failed; browser testing cannot proceed."
+    }
+]
